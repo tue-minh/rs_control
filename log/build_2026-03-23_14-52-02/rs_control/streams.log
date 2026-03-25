@@ -1,0 +1,37 @@
+[0.016s] Invoking command in '/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tue/Documents/ros2_ws/install/cbgear:/home/tue/Documents/ros2_cybergear/install/cbgear_node:/opt/ros/humble /usr/bin/cmake --build /home/tue/Documents/ros2_ws/src/rs_control/build/rs_control -- -j12 -l12
+[0.074s] [35m[1mConsolidate compiler generated dependencies of target main_control_node[0m
+[0.104s] [ 50%] [32mBuilding CXX object CMakeFiles/main_control_node.dir/src/main_control_node.cpp.o[0m
+[2.492s] [01m[K/home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp:[m[K In function ‘[01m[Kbool write_operation_frame(int, int, double, double, double)[m[K’:
+[2.493s] [01m[K/home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp:148:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KVEL_SCALE[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.493s]   148 |     const double [01;35m[KVEL_SCALE[m[K = 50.0;     // rs-03
+[2.493s]       |                  [01;35m[K^~~~~~~~~[m[K
+[2.493s] [01m[K/home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp:151:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTQ_SCALE[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.493s]   151 |     const double [01;35m[KTQ_SCALE[m[K = 60.0;      // rs-03
+[2.493s]       |                  [01;35m[K^~~~~~~~[m[K
+[2.495s] [01m[K/home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp:[m[K In function ‘[01m[Kvoid signal_handler(int)[m[K’:
+[2.495s] [01m[K/home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp:246:25:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.495s]   246 | void signal_handler([01;35m[Kint signum[m[K) {
+[2.495s]       |                     [01;35m[K~~~~^~~~~~[m[K
+[3.065s] [100%] [32m[1mLinking CXX executable main_control_node[0m
+[3.221s] [100%] Built target main_control_node
+[3.236s] Invoked command in '/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tue/Documents/ros2_ws/install/cbgear:/home/tue/Documents/ros2_cybergear/install/cbgear_node:/opt/ros/humble /usr/bin/cmake --build /home/tue/Documents/ros2_ws/src/rs_control/build/rs_control -- -j12 -l12
+[3.249s] Invoking command in '/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tue/Documents/ros2_ws/install/cbgear:/home/tue/Documents/ros2_cybergear/install/cbgear_node:/opt/ros/humble /usr/bin/cmake --install /home/tue/Documents/ros2_ws/src/rs_control/build/rs_control
+[3.263s] -- Install configuration: ""
+[3.263s] -- Installing: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/lib/rs_control/main_control_node
+[3.265s] -- Set runtime path of "/home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/lib/rs_control/main_control_node" to ""
+[3.265s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/ament_index/resource_index/package_run_dependencies/rs_control
+[3.265s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/ament_index/resource_index/parent_prefix_path/rs_control
+[3.265s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/environment/ament_prefix_path.sh
+[3.265s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/environment/ament_prefix_path.dsv
+[3.265s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/environment/path.sh
+[3.265s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/environment/path.dsv
+[3.265s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/local_setup.bash
+[3.265s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/local_setup.sh
+[3.265s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/local_setup.zsh
+[3.266s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/local_setup.dsv
+[3.266s] -- Installing: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/package.dsv
+[3.266s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/ament_index/resource_index/packages/rs_control
+[3.266s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/cmake/rs_controlConfig.cmake
+[3.266s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/cmake/rs_controlConfig-version.cmake
+[3.266s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/package.xml
+[3.270s] Invoked command in '/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tue/Documents/ros2_ws/install/cbgear:/home/tue/Documents/ros2_cybergear/install/cbgear_node:/opt/ros/humble /usr/bin/cmake --install /home/tue/Documents/ros2_ws/src/rs_control/build/rs_control

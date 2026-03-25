@@ -1,0 +1,26 @@
+[0.015s] Invoking command in '/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tue/Documents/ros2_ws/install/cbgear:/home/tue/Documents/ros2_cybergear/install/cbgear_node:/opt/ros/humble /usr/bin/cmake --build /home/tue/Documents/ros2_ws/src/rs_control/build/rs_control -- -j12 -l12
+[0.071s] [35m[1mConsolidate compiler generated dependencies of target main_control_node[0m
+[0.099s] [ 50%] [32mBuilding CXX object CMakeFiles/main_control_node.dir/src/main_control_node.cpp.o[0m
+[10.572s] [100%] [32m[1mLinking CXX executable main_control_node[0m
+[11.352s] [100%] Built target main_control_node
+[11.366s] Invoked command in '/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tue/Documents/ros2_ws/install/cbgear:/home/tue/Documents/ros2_cybergear/install/cbgear_node:/opt/ros/humble /usr/bin/cmake --build /home/tue/Documents/ros2_ws/src/rs_control/build/rs_control -- -j12 -l12
+[11.382s] Invoking command in '/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tue/Documents/ros2_ws/install/cbgear:/home/tue/Documents/ros2_cybergear/install/cbgear_node:/opt/ros/humble /usr/bin/cmake --install /home/tue/Documents/ros2_ws/src/rs_control/build/rs_control
+[11.392s] -- Install configuration: ""
+[11.392s] -- Installing: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/lib/rs_control/main_control_node
+[11.406s] -- Set runtime path of "/home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/lib/rs_control/main_control_node" to ""
+[11.406s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/ament_index/resource_index/package_run_dependencies/rs_control
+[11.406s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/ament_index/resource_index/parent_prefix_path/rs_control
+[11.407s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/environment/ament_prefix_path.sh
+[11.407s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/environment/ament_prefix_path.dsv
+[11.407s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/environment/path.sh
+[11.407s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/environment/path.dsv
+[11.407s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/local_setup.bash
+[11.407s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/local_setup.sh
+[11.407s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/local_setup.zsh
+[11.407s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/local_setup.dsv
+[11.407s] -- Installing: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/package.dsv
+[11.407s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/ament_index/resource_index/packages/rs_control
+[11.407s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/cmake/rs_controlConfig.cmake
+[11.407s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/cmake/rs_controlConfig-version.cmake
+[11.407s] -- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/package.xml
+[11.412s] Invoked command in '/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tue/Documents/ros2_ws/install/cbgear:/home/tue/Documents/ros2_cybergear/install/cbgear_node:/opt/ros/humble /usr/bin/cmake --install /home/tue/Documents/ros2_ws/src/rs_control/build/rs_control

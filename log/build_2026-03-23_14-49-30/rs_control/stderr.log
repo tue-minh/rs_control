@@ -1,0 +1,15 @@
+[01m[K/home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp:[m[K In function ‘[01m[Kbool write_operation_frame(int, int, double, double, double)[m[K’:
+[01m[K/home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp:148:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KVEL_SCALE[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  148 |     const double [01;35m[KVEL_SCALE[m[K = 50.0;     // rs-03
+      |                  [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp:151:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTQ_SCALE[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  151 |     const double [01;35m[KTQ_SCALE[m[K = 60.0;      // rs-03
+      |                  [01;35m[K^~~~~~~~[m[K
+[01m[K/home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp:[m[K In function ‘[01m[Kbool read_operation_frame(int)[m[K’:
+[01m[K/home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp:180:13:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around operand of ‘[01m[K![m[K’ or change ‘[01m[K&[m[K’ to ‘[01m[K&&[m[K’ or ‘[01m[K![m[K’ to ‘[01m[K~[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+  180 |         if ([01;35m[K!frame.can_id[m[K & CAN_EFF_FLAG) return false;
+      |             [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp:[m[K In function ‘[01m[Kvoid signal_handler(int)[m[K’:
+[01m[K/home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp:246:25:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  246 | void signal_handler([01;35m[Kint signum[m[K) {
+      |                     [01;35m[K~~~~^~~~~~[m[K

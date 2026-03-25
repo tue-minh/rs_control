@@ -1,0 +1,16 @@
+/home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/lib/rs_control/main_control_node
+/home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/ament_index/resource_index/package_run_dependencies/rs_control
+/home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/ament_index/resource_index/parent_prefix_path/rs_control
+/home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/environment/ament_prefix_path.sh
+/home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/environment/ament_prefix_path.dsv
+/home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/environment/path.sh
+/home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/environment/path.dsv
+/home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/local_setup.bash
+/home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/local_setup.sh
+/home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/local_setup.zsh
+/home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/local_setup.dsv
+/home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/package.dsv
+/home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/ament_index/resource_index/packages/rs_control
+/home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/cmake/rs_controlConfig.cmake
+/home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/cmake/rs_controlConfig-version.cmake
+/home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/package.xml

@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target main_control_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/main_control_node.dir/src/main_control_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable main_control_node[0m
+[100%] Built target main_control_node
+-- Install configuration: ""
+-- Installing: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/lib/rs_control/main_control_node
+-- Set runtime path of "/home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/lib/rs_control/main_control_node" to ""
+-- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/ament_index/resource_index/package_run_dependencies/rs_control
+-- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/ament_index/resource_index/parent_prefix_path/rs_control
+-- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/environment/ament_prefix_path.sh
+-- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/environment/path.sh
+-- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/environment/path.dsv
+-- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/local_setup.bash
+-- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/local_setup.sh
+-- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/local_setup.zsh
+-- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/local_setup.dsv
+-- Installing: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/package.dsv
+-- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/ament_index/resource_index/packages/rs_control
+-- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/cmake/rs_controlConfig.cmake
+-- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/cmake/rs_controlConfig-version.cmake
+-- Up-to-date: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/package.xml

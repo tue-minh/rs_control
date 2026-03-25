@@ -1,0 +1,10 @@
+/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control/CMakeFiles/uninstall.dir
+/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control/CMakeFiles/rs_control_uninstall.dir
+/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control/CMakeFiles/main_control_node.dir
+/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control/CMakeFiles/test.dir
+/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control/CMakeFiles/edit_cache.dir
+/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control/CMakeFiles/rebuild_cache.dir
+/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control/CMakeFiles/list_install_components.dir
+/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control/CMakeFiles/install.dir
+/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control/CMakeFiles/install/local.dir
+/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control/CMakeFiles/install/strip.dir

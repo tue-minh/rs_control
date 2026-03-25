@@ -1,0 +1,83 @@
+[0.012s] Invoking command in '/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tue/Documents/ros2_ws/install/cbgear:/home/tue/Documents/ros2_cybergear/install/cbgear_node:/opt/ros/humble /usr/bin/cmake /home/tue/Documents/ros2_ws/src/rs_control -DCMAKE_INSTALL_PREFIX=/home/tue/Documents/ros2_ws/src/rs_control/install/rs_control
+[0.092s] -- The C compiler identification is GNU 11.4.0
+[0.167s] -- The CXX compiler identification is GNU 11.4.0
+[0.178s] -- Detecting C compiler ABI info
+[0.269s] -- Detecting C compiler ABI info - done
+[0.277s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.278s] -- Detecting C compile features
+[0.278s] -- Detecting C compile features - done
+[0.283s] -- Detecting CXX compiler ABI info
+[0.385s] -- Detecting CXX compiler ABI info - done
+[0.393s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.393s] -- Detecting CXX compile features
+[0.393s] -- Detecting CXX compile features - done
+[0.397s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.567s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.691s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.750s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.757s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.768s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.783s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.802s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.861s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.866s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.001s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.039s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.091s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.105s] -- Looking for pthread.h
+[1.195s] -- Looking for pthread.h - found
+[1.195s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.286s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.287s] -- Found Threads: TRUE  
+[1.346s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.458s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.458s] -- Configured cppcheck include dirs: /home/tue/Documents/ros2_ws/src/rs_control/include
+[1.458s] -- Configured cppcheck exclude dirs and/or files: 
+[1.463s] -- Added test 'lint_cmake' to check CMake code style
+[1.475s] -- Added test 'uncrustify' to check C / C++ code style
+[1.475s] -- Configured uncrustify additional arguments: 
+[1.477s] -- Added test 'xmllint' to check XML markup files
+[1.480s] -- Configuring done
+[1.494s] -- Generating done
+[1.499s] -- Build files have been written to: /home/tue/Documents/ros2_ws/src/rs_control/build/rs_control
+[1.517s] Invoked command in '/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tue/Documents/ros2_ws/install/cbgear:/home/tue/Documents/ros2_cybergear/install/cbgear_node:/opt/ros/humble /usr/bin/cmake /home/tue/Documents/ros2_ws/src/rs_control -DCMAKE_INSTALL_PREFIX=/home/tue/Documents/ros2_ws/src/rs_control/install/rs_control
+[1.519s] Invoking command in '/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tue/Documents/ros2_ws/install/cbgear:/home/tue/Documents/ros2_cybergear/install/cbgear_node:/opt/ros/humble /usr/bin/cmake --build /home/tue/Documents/ros2_ws/src/rs_control/build/rs_control -- -j12 -l12
+[1.586s] [ 50%] [32mBuilding CXX object CMakeFiles/main_control_node.dir/src/main_control_node.cpp.o[0m
+[3.956s] [01m[K/home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp:[m[K In function ‘[01m[Kbool write_operation_frame(int, int, double, double, double)[m[K’:
+[3.956s] [01m[K/home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp:148:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KVEL_SCALE[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.956s]   148 |     const double [01;35m[KVEL_SCALE[m[K = 50.0;     // rs-03
+[3.956s]       |                  [01;35m[K^~~~~~~~~[m[K
+[3.956s] [01m[K/home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp:151:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KTQ_SCALE[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.956s]   151 |     const double [01;35m[KTQ_SCALE[m[K = 60.0;      // rs-03
+[3.957s]       |                  [01;35m[K^~~~~~~~[m[K
+[3.957s] [01m[K/home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp:[m[K In function ‘[01m[Kbool read_operation_frame(int)[m[K’:
+[3.957s] [01m[K/home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp:180:13:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around operand of ‘[01m[K![m[K’ or change ‘[01m[K&[m[K’ to ‘[01m[K&&[m[K’ or ‘[01m[K![m[K’ to ‘[01m[K~[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[3.957s]   180 |         if ([01;35m[K!frame.can_id[m[K & CAN_EFF_FLAG) return false;
+[3.957s]       |             [01;35m[K^~~~~~~~~~~~~[m[K
+[3.958s] [01m[K/home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp:[m[K In function ‘[01m[Kvoid signal_handler(int)[m[K’:
+[3.958s] [01m[K/home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp:246:25:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksignum[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.958s]   246 | void signal_handler([01;35m[Kint signum[m[K) {
+[3.958s]       |                     [01;35m[K~~~~^~~~~~[m[K
+[4.486s] [100%] [32m[1mLinking CXX executable main_control_node[0m
+[4.637s] [100%] Built target main_control_node
+[4.655s] Invoked command in '/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tue/Documents/ros2_ws/install/cbgear:/home/tue/Documents/ros2_cybergear/install/cbgear_node:/opt/ros/humble /usr/bin/cmake --build /home/tue/Documents/ros2_ws/src/rs_control/build/rs_control -- -j12 -l12
+[4.666s] Invoking command in '/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tue/Documents/ros2_ws/install/cbgear:/home/tue/Documents/ros2_cybergear/install/cbgear_node:/opt/ros/humble /usr/bin/cmake --install /home/tue/Documents/ros2_ws/src/rs_control/build/rs_control
+[4.674s] -- Install configuration: ""
+[4.674s] -- Installing: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/lib/rs_control/main_control_node
+[4.674s] -- Set runtime path of "/home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/lib/rs_control/main_control_node" to ""
+[4.675s] -- Installing: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/ament_index/resource_index/package_run_dependencies/rs_control
+[4.675s] -- Installing: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/ament_index/resource_index/parent_prefix_path/rs_control
+[4.676s] -- Installing: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/environment/ament_prefix_path.sh
+[4.676s] -- Installing: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/environment/ament_prefix_path.dsv
+[4.676s] -- Installing: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/environment/path.sh
+[4.676s] -- Installing: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/environment/path.dsv
+[4.676s] -- Installing: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/local_setup.bash
+[4.677s] -- Installing: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/local_setup.sh
+[4.677s] -- Installing: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/local_setup.zsh
+[4.677s] -- Installing: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/local_setup.dsv
+[4.678s] -- Installing: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/package.dsv
+[4.678s] -- Installing: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/ament_index/resource_index/packages/rs_control
+[4.678s] -- Installing: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/cmake/rs_controlConfig.cmake
+[4.678s] -- Installing: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/cmake/rs_controlConfig-version.cmake
+[4.679s] -- Installing: /home/tue/Documents/ros2_ws/src/rs_control/install/rs_control/share/rs_control/package.xml
+[4.682s] Invoked command in '/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tue/Documents/ros2_ws/install/cbgear:/home/tue/Documents/ros2_cybergear/install/cbgear_node:/opt/ros/humble /usr/bin/cmake --install /home/tue/Documents/ros2_ws/src/rs_control/build/rs_control
