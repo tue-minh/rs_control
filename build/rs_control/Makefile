@@ -210,6 +210,30 @@ main_control_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_control_node.dir/build.make CMakeFiles/main_control_node.dir/build
 .PHONY : main_control_node/fast
 
+src/can_interface.o: src/can_interface.cpp.o
+.PHONY : src/can_interface.o
+
+# target to build an object file
+src/can_interface.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_control_node.dir/build.make CMakeFiles/main_control_node.dir/src/can_interface.cpp.o
+.PHONY : src/can_interface.cpp.o
+
+src/can_interface.i: src/can_interface.cpp.i
+.PHONY : src/can_interface.i
+
+# target to preprocess a source file
+src/can_interface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_control_node.dir/build.make CMakeFiles/main_control_node.dir/src/can_interface.cpp.i
+.PHONY : src/can_interface.cpp.i
+
+src/can_interface.s: src/can_interface.cpp.s
+.PHONY : src/can_interface.s
+
+# target to generate assembly for a file
+src/can_interface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_control_node.dir/build.make CMakeFiles/main_control_node.dir/src/can_interface.cpp.s
+.PHONY : src/can_interface.cpp.s
+
 src/main_control_node.o: src/main_control_node.cpp.o
 .PHONY : src/main_control_node.o
 
@@ -250,6 +274,9 @@ help:
 	@echo "... rs_control_uninstall"
 	@echo "... uninstall"
 	@echo "... main_control_node"
+	@echo "... src/can_interface.o"
+	@echo "... src/can_interface.i"
+	@echo "... src/can_interface.s"
 	@echo "... src/main_control_node.o"
 	@echo "... src/main_control_node.i"
 	@echo "... src/main_control_node.s"

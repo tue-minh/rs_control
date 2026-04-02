@@ -18,9 +18,17 @@ include_directories(include)
 add_executable(main_control_node src/main_control_node.cpp src/can_interface.cpp)
 ament_target_dependencies(main_control_node rclcpp std_msgs sensor_msgs)
 
+add_executable(motor_state_reader_node src/motor_state_reader_node.cpp src/can_interface.cpp)
+ament_target_dependencies(motor_state_reader_node rclcpp std_msgs sensor_msgs)
+
 install(TARGETS
   main_control_node
+  motor_state_reader_node
   DESTINATION lib/${PROJECT_NAME}
+)
+
+install(DIRECTORY launch/
+  DESTINATION share/${PROJECT_NAME}/launch
 )
 
 if(BUILD_TESTING)

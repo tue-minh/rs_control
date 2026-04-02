@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/main_control_node.dir/src/can_interface.cpp.o"
+  "CMakeFiles/main_control_node.dir/src/can_interface.cpp.o.d"
   "CMakeFiles/main_control_node.dir/src/main_control_node.cpp.o"
   "CMakeFiles/main_control_node.dir/src/main_control_node.cpp.o.d"
   "main_control_node"

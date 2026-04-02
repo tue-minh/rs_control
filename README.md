@@ -106,7 +106,7 @@ colcon build --packages-select rs_control
 source install/setup.bash
 ```
 
-### Run
+### Run Control Node
 
 ```bash
 # Basic usage
@@ -117,6 +117,28 @@ ros2 run rs_control main_control_node --ros-args \
   -p motor_id:=127 \
   -p can_interface:=can0 \
   -p control_frequency:=50.0
+```
+
+### Run State Reader Node (Read-Only)
+
+The state reader node only reads and publishes motor state without sending control commands.
+
+```bash
+# Basic usage
+ros2 run rs_control motor_state_reader_node
+
+# With custom parameters
+ros2 run rs_control motor_state_reader_node --ros-args \
+  -p motor_id:=127 \
+  -p can_interface:=can0 \
+  -p read_frequency:=50.0
+```
+
+### Launch Files
+
+```bash
+# Using launch file
+ros2 launch rs_control motor_state_reader.launch.py
 ```
 
 ### Prerequisites
@@ -183,9 +205,12 @@ rs_control/
 │   ├── protocol.h         # RobStride protocol constants
 │   └── rs_lib.h           # Main library header
 ├── src/
-│   ├── can_interface.cpp  # CAN interface implementation
-│   ├── main_control_node.cpp  # ROS2 control node
-│   └── rs_lib.cpp         # Protocol functions (legacy)
+│   ├── can_interface.cpp      # CAN interface implementation
+│   ├── main_control_node.cpp  # ROS2 control node (full control)
+│   ├── motor_state_reader_node.cpp  # ROS2 read-only state node
+│   └── rs_lib.cpp             # Protocol functions (legacy)
+├── launch/
+│   └── motor_state_reader.launch.py  # Launch file for state reader
 ├── CMakeLists.txt
 ├── package.xml
 └── README.md

@@ -83,22 +83,37 @@ CMakeFiles/main_control_node.dir/src/main_control_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main_control_node.dir/src/main_control_node.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp -o CMakeFiles/main_control_node.dir/src/main_control_node.cpp.s
 
+CMakeFiles/main_control_node.dir/src/can_interface.cpp.o: CMakeFiles/main_control_node.dir/flags.make
+CMakeFiles/main_control_node.dir/src/can_interface.cpp.o: ../../src/can_interface.cpp
+CMakeFiles/main_control_node.dir/src/can_interface.cpp.o: CMakeFiles/main_control_node.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main_control_node.dir/src/can_interface.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main_control_node.dir/src/can_interface.cpp.o -MF CMakeFiles/main_control_node.dir/src/can_interface.cpp.o.d -o CMakeFiles/main_control_node.dir/src/can_interface.cpp.o -c /home/tue/Documents/ros2_ws/src/rs_control/src/can_interface.cpp
+
+CMakeFiles/main_control_node.dir/src/can_interface.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main_control_node.dir/src/can_interface.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tue/Documents/ros2_ws/src/rs_control/src/can_interface.cpp > CMakeFiles/main_control_node.dir/src/can_interface.cpp.i
+
+CMakeFiles/main_control_node.dir/src/can_interface.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main_control_node.dir/src/can_interface.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tue/Documents/ros2_ws/src/rs_control/src/can_interface.cpp -o CMakeFiles/main_control_node.dir/src/can_interface.cpp.s
+
 # Object files for target main_control_node
 main_control_node_OBJECTS = \
-"CMakeFiles/main_control_node.dir/src/main_control_node.cpp.o"
+"CMakeFiles/main_control_node.dir/src/main_control_node.cpp.o" \
+"CMakeFiles/main_control_node.dir/src/can_interface.cpp.o"
 
 # External object files for target main_control_node
 main_control_node_EXTERNAL_OBJECTS =
 
 main_control_node: CMakeFiles/main_control_node.dir/src/main_control_node.cpp.o
+main_control_node: CMakeFiles/main_control_node.dir/src/can_interface.cpp.o
 main_control_node: CMakeFiles/main_control_node.dir/build.make
 main_control_node: /opt/ros/humble/lib/librclcpp.so
-main_control_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
-main_control_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
-main_control_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-main_control_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
-main_control_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
-main_control_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
+main_control_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
+main_control_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
+main_control_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
+main_control_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
+main_control_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_py.so
 main_control_node: /opt/ros/humble/lib/liblibstatistics_collector.so
 main_control_node: /opt/ros/humble/lib/librcl.so
 main_control_node: /opt/ros/humble/lib/librmw_implementation.so
@@ -132,30 +147,47 @@ main_control_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_py.s
 main_control_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_c.so
 main_control_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_c.so
 main_control_node: /opt/ros/humble/lib/libtracetools.so
+main_control_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
+main_control_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
 main_control_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 main_control_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
+main_control_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
+main_control_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 main_control_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 main_control_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 main_control_node: /opt/ros/humble/lib/libfastcdr.so.1.0.24
 main_control_node: /opt/ros/humble/lib/librmw.so
+main_control_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
+main_control_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 main_control_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+main_control_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+main_control_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 main_control_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 main_control_node: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 main_control_node: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
+main_control_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
+main_control_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so
+main_control_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
+main_control_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
+main_control_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
+main_control_node: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+main_control_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
+main_control_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
+main_control_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+main_control_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
+main_control_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
+main_control_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
+main_control_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
+main_control_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
+main_control_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
 main_control_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 main_control_node: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
-main_control_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
-main_control_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
-main_control_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
-main_control_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
-main_control_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 main_control_node: /opt/ros/humble/lib/librosidl_typesupport_c.so
 main_control_node: /opt/ros/humble/lib/librcpputils.so
 main_control_node: /opt/ros/humble/lib/librosidl_runtime_c.so
 main_control_node: /opt/ros/humble/lib/librcutils.so
-main_control_node: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 main_control_node: CMakeFiles/main_control_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main_control_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tue/Documents/ros2_ws/src/rs_control/build/rs_control/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable main_control_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main_control_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

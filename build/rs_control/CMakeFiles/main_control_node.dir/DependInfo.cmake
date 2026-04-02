@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/tue/Documents/ros2_ws/src/rs_control/src/can_interface.cpp" "CMakeFiles/main_control_node.dir/src/can_interface.cpp.o" "gcc" "CMakeFiles/main_control_node.dir/src/can_interface.cpp.o.d"
   "/home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp" "CMakeFiles/main_control_node.dir/src/main_control_node.cpp.o" "gcc" "CMakeFiles/main_control_node.dir/src/main_control_node.cpp.o.d"
   )
 
