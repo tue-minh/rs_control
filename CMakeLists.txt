@@ -21,9 +21,13 @@ ament_target_dependencies(main_control_node rclcpp std_msgs sensor_msgs)
 add_executable(motor_state_reader_node src/motor_state_reader_node.cpp src/can_interface.cpp)
 ament_target_dependencies(motor_state_reader_node rclcpp std_msgs sensor_msgs)
 
+add_executable(motor_checker_node src/motor_checker_node.cpp src/can_interface.cpp)
+ament_target_dependencies(motor_checker_node rclcpp std_msgs sensor_msgs)
+
 install(TARGETS
   main_control_node
   motor_state_reader_node
+  motor_checker_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
