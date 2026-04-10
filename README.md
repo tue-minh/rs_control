@@ -2,26 +2,34 @@
 
 ROS2 node for controlling RobStride motors via CAN bus using the MIT control mode.
 
+## Features
+
+- **Manual Position Control**: Set target positions via ROS topics
+- **Sine Wave Motion**: Generate smooth sine wave trajectories for testing
+- **Dual Motor Support**: Independent control of two motors (RS-03 and RS-06)
+- **Real-time Feedback**: Publish motor states and status
+
 ## System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    RobStride Control Node                        │
+│                 Dual Motor Control Node                         │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                  │
 │  Subscribers:                  Publishers:                        │
 │  ┌──────────────────┐        ┌──────────────────────────┐      │
-│  │ target_position   │        │ motor_state (JointState) │      │
-│  │ target_kp         │        │ motor_status (Int32)     │      │
-│  │ target_kd         │        └──────────────────────────┘      │
+│  │ target_position_* │        │ motor_*_state (JointState)│      │
+│  │ sine_wave_*       │        │ motor_status (Int32)     │      │
+│  │ target_kp/kd      │        └──────────────────────────┘      │
 │  └──────────────────┘                                            │
 │           │                                                      │
 │           ▼                                                      │
 │  ┌──────────────────────────────────────────────────────────┐   │
 │  │                   Control Loop (50 Hz)                    │   │
-│  │  1. Send MIT mode command frame                          │   │
-│  │  2. Read motor status feedback                           │   │
-│  │  3. Publish joint state                                  │   │
+│  │  1. Generate position commands (manual or sine wave)     │   │
+│  │  2. Send MIT mode command frames                          │   │
+│  │  3. Read motor status feedback                            │   │
+│  │  4. Publish joint states                                  │   │
 │  └──────────────────────────────────────────────────────────┘   │
 │           │                                                      │
 │           ▼                                                      │
@@ -33,20 +41,97 @@ ROS2 node for controlling RobStride motors via CAN bus using the MIT control mod
 └───────────┼──────────────────────────────────────────────────────┘
             │
             ▼ CAN (can0)
-    ┌───────────────────┐
-    │   RobStride Motor │
-    │      (RS-03)      │
-    └───────────────────┘
+    ┌───────────────────┐    ┌───────────────────┐
+    │   RobStride RS-03 │    │   RobStride RS-06 │
+    │     (ID: 1)       │    │     (ID: 127)     │
+    └───────────────────┘    └───────────────────┘
 ```
 
 ## Topics
 
 ### Subscriptions
 
-Ex_command. 
-ros2 topic pub /target_position std_msgs/msg/Float64 "{data: 0.5}" --once 
-ros2 topic pub /target_kp std_msgs/msg/Float64 "{data: 0.5}" --once 
-ros2 topic pub /target_kd std_msgs/msg/Float64 "{data: 0.5}" --once 
+#### Manual Position Control
+- `target_position_rs03` (std_msgs/Float64): Target position for RS-03 motor
+- `target_position_rs06` (std_msgs/Float64): Target position for RS-06 motor
+- `target_kp` (std_msgs/Float64): Position gain (shared)
+- `target_kd` (std_msgs/Float64): Velocity gain (shared)
+
+#### Sine Wave Control
+- `sine_wave_rs03` (rs_control/SineWaveParameters): Sine wave parameters for RS-03
+- `sine_wave_rs06` (rs_control/SineWaveParameters): Sine wave parameters for RS-06
+
+### Publishers
+- `motor_rs03_state` (sensor_msgs/JointState): RS-03 motor feedback
+- `motor_rs06_state` (sensor_msgs/JointState): RS-06 motor feedback
+- `motor_status` (std_msgs/Int32): Combined motor status (bit 0: RS-03, bit 1: RS-06)
+
+## Usage Examples
+
+### Manual Position Control
+```bash
+# Set RS-03 position
+ros2 topic pub /target_position_rs03 std_msgs/msg/Float64 "{data: 0.5}" --once
+
+# Set RS-06 position
+ros2 topic pub /target_position_rs06 std_msgs/msg/Float64 "{data: 1.0}" --once
+
+# Set gains
+ros2 topic pub /target_kp std_msgs/msg/Float64 "{data: 2.0}" --once
+ros2 topic pub /target_kd std_msgs/msg/Float64 "{data: 0.1}" --once
+```
+
+### Sine Wave Control
+```bash
+# Start sine wave motion for RS-03
+ros2 topic pub /sine_wave_rs03 rs_control/msg/SineWaveParameters "{
+  amplitude: 1.0,
+  frequency: 0.5,
+  velocity_limit: 10.0,
+  kp: 2.0,
+  kd: 0.1
+}" --once
+
+# Start sine wave motion for RS-06 with different parameters
+ros2 topic pub /sine_wave_rs06 rs_control/msg/SineWaveParameters "{
+  amplitude: 0.8,
+  frequency: 0.3,
+  velocity_limit: 8.0,
+  kp: 1.5,
+  kd: 0.05
+}" --once
+```
+
+### Monitor Motor State
+```bash
+# Monitor RS-03 state
+ros2 topic echo /motor_rs03_state
+
+# Monitor RS-06 state
+ros2 topic echo /motor_rs06_state
+
+# Monitor status
+ros2 topic echo /motor_status
+```
+
+## Testing
+
+A test script is provided to demonstrate the sine wave functionality:
+
+```bash
+# Run the sine wave test
+ros2 run rs_control sine_wave_test.py
+```
+
+This will start both motors in sine wave motion with different parameters for 10 seconds.
+
+## Parameters
+
+- `can_interface` (string, default: "can0"): CAN interface name
+- `control_frequency` (double, default: 50.0): Control loop frequency in Hz
+- `default_kp` (double, default: 2.0): Default position gain
+- `default_kd` (double, default: 0.1): Default velocity gain
+- `motor_id` (int, default: 1 for single motor nodes): Motor CAN ID 
 
 | Topic | Type | Description |
 |-------|------|-------------|

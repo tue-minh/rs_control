@@ -34,11 +34,11 @@ public:
       running_(true)
     {
         // Declare parameters
-        this->declare_parameter<int>("motor_id", 127);
+        this->declare_parameter<int>("motor_id", 1);
         this->declare_parameter<std::string>("can_interface", "can0");
         this->declare_parameter<double>("control_frequency", 50.0);
-        this->declare_parameter<double>("default_kp", 4.0);
-        this->declare_parameter<double>("default_kd", 0.5);
+        this->declare_parameter<double>("default_kp", 1);
+        this->declare_parameter<double>("default_kd", 0.2);
 
         // Get parameters
         this->get_parameter("motor_id", motor_id_);
@@ -273,6 +273,12 @@ private:
         }
 
         uint32_t comm_type = (frame.can_id >> 24) & 0x1F;
+        uint8_t frame_motor_id = frame.can_id & 0xFF;
+
+        // Only process frames addressed to this motor
+        if (frame_motor_id != motor_id_) {
+            return;
+        }
 
         if (comm_type == CommType::OPERATION_STATUS) {
             // Parse status data (format depends on motor firmware)

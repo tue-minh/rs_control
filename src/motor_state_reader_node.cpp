@@ -116,6 +116,12 @@ private:
         }
 
         uint32_t comm_type = (frame.can_id >> 24) & 0x1F;
+        uint8_t frame_motor_id = frame.can_id & 0xFF;
+
+        // Only process frames addressed to this motor
+        if (frame_motor_id != motor_id_) {
+            return;
+        }
 
         if (comm_type == CommType::OPERATION_STATUS) {
             // Parse status data (format depends on motor firmware)
