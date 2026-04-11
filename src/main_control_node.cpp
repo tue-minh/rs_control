@@ -34,7 +34,7 @@ public:
       running_(true)
     {
         // Declare parameters
-        this->declare_parameter<int>("motor_id", 1);
+        this->declare_parameter<int>("motor_id", 127);
         this->declare_parameter<std::string>("can_interface", "can0");
         this->declare_parameter<double>("control_frequency", 50.0);
         this->declare_parameter<double>("default_kp", 1);

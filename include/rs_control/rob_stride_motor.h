@@ -83,6 +83,28 @@ public:
     bool set_mode(int8_t mode);
 
     /**
+     * @brief Write a parameter to the motor
+     * @param param_id Parameter ID (see ParamID namespace)
+     * @param value Parameter value as float
+     */
+    bool write_parameter(uint16_t param_id, float value);
+
+    /**
+     * @brief Read a parameter from the motor
+     * @param param_id Parameter ID (see ParamID namespace)
+     * @param value Output parameter for the read value
+     * @param timeout_ms Read timeout in milliseconds
+     * @return true if successful, false otherwise
+     */
+    bool read_parameter(uint16_t param_id, float& value, int timeout_ms = 100);
+
+    /**
+     * @brief Write position mode frame
+     * @param position Target position (radians)
+     */
+    bool write_position_frame(double position);
+
+    /**
      * @brief Set velocity and torque limits
      * @param velocity_limit Velocity limit (default: 50.0 rad/s)
      * @param torque_limit Torque limit (default: 60.0 Nm)

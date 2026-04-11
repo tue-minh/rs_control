@@ -77,13 +77,8 @@ bool RobStrideMotor::initialize() {
 
     // Set MIT mode
     if (!set_mode(ControlMode::MIT_MODE)) {
-        std::cerr << "RobStrideMotor: failed to set motor mode" << std::endl;
+        std::cerr << "RobStrideMotor: failed to set MIT mode" << std::endl;
         return false;
-    }
-
-    // Set limits
-    if (!set_limits()) {
-        std::cerr << "RobStrideMotor: warning - failed to set motor limits" << std::endl;
     }
 
     return true;
@@ -123,6 +118,81 @@ bool RobStrideMotor::set_mode(int8_t mode) {
     uint8_t data[8] = {0};
     pack_u16_le(data, ParamID::MODE);
     data[4] = static_cast<uint8_t>(mode);
+    return send_frame(ext_id, data, 8);
+}
+
+bool RobStrideMotor::write_parameter(uint16_t param_id, float value) {
+    uint32_t ext_id = build_ext_id(CommType::WRITE_PARAMETER);
+    uint8_t data[8] = {0};
+    pack_u16_le(data, param_id);
+    pack_float_le(&data[4], value);
+    return send_frame(ext_id, data, 8);
+}
+
+bool RobStrideMotor::read_parameter(uint16_t param_id, float& value, int timeout_ms) {
+    uint32_t ext_id = build_ext_id(CommType::READ_PARAMETER);
+    uint8_t data[8] = {0};
+    pack_u16_le(data, param_id);
+
+    if (!send_frame(ext_id, data, 8)) {
+        return false;
+    }
+
+    struct can_frame frame;
+    auto end_time = std::chrono::steady_clock::now() + std::chrono::milliseconds(timeout_ms);
+
+    while (true) {
+        auto now = std::chrono::steady_clock::now();
+        auto remaining = std::chrono::duration_cast<std::chrono::microseconds>(end_time - now);
+        if (remaining.count() <= 0) {
+            break;
+        }
+
+        struct timeval tv;
+        tv.tv_sec = remaining.count() / 1000000;
+        tv.tv_usec = remaining.count() % 1000000;
+
+        fd_set rdfs;
+        FD_ZERO(&rdfs);
+        FD_SET(socket_fd_, &rdfs);
+
+        int ret = select(socket_fd_ + 1, &rdfs, nullptr, nullptr, &tv);
+        if (ret <= 0) {
+            break;
+        }
+
+        ssize_t nbytes = read(socket_fd_, &frame, sizeof(struct can_frame));
+        if (nbytes != sizeof(struct can_frame)) {
+            break;
+        }
+
+        // Check if this is a parameter response for our motor
+        uint8_t frame_motor_id = (frame.can_id >> 8) & 0xFF;
+        if (frame_motor_id != motor_id_) {
+            continue;
+        }
+
+        uint32_t comm_type = (frame.can_id >> 24) & 0x1F;
+        if (comm_type == CommType::READ_PARAMETER && frame.can_dlc >= 6) {
+            // Check if param_id matches
+            uint16_t resp_param_id = static_cast<uint16_t>(frame.data[0]) | (static_cast<uint16_t>(frame.data[1]) << 8);
+            if (resp_param_id == param_id) {
+                memcpy(&value, &frame.data[4], sizeof(float));
+                return true;
+            }
+        }
+    }
+
+    return false;
+}
+
+bool RobStrideMotor::write_position_frame(double position) {
+    // Use OPERATION_CONTROL command for position mode control
+    uint32_t ext_id = (CommType::OPERATION_CONTROL << 24) | (0 << 8) | motor_id_;
+    uint8_t data[8] = {0};
+    float pos_float = static_cast<float>(position);
+    pack_float_le(&data[0], pos_float);
+    // data[4-7] can be used for velocity/torque feedforward if needed
     return send_frame(ext_id, data, 8);
 }
 
