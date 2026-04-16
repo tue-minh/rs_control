@@ -1,0 +1,188 @@
+[35m[1mConsolidate compiler generated dependencies of target rs_control__rosidl_generator_c[0m
+[35m[1mConsolidate compiler generated dependencies of target rob_stride_motor[0m
+[35m[1mConsolidate compiler generated dependencies of target main_control_node[0m
+[  2%] Built target rs_control__cpp
+[ 10%] Built target rs_control__rosidl_generator_c
+[ 15%] Built target rob_stride_motor
+[ 15%] Built target ament_cmake_python_copy_rs_control
+[ 23%] Built target main_control_node
+[35m[1mConsolidate compiler generated dependencies of target rs_control__rosidl_typesupport_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target rs_control__rosidl_typesupport_introspection_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target rs_control__rosidl_typesupport_fastrtps_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target rs_control__rosidl_typesupport_introspection_c[0m
+[35m[1mConsolidate compiler generated dependencies of target rs_control__rosidl_typesupport_c[0m
+[35m[1mConsolidate compiler generated dependencies of target rs_control__rosidl_typesupport_fastrtps_c[0m
+[ 44%] Built target rs_control__rosidl_typesupport_fastrtps_cpp
+[ 47%] Built target rs_control__rosidl_typesupport_introspection_cpp
+[ 47%] Built target rs_control__rosidl_typesupport_cpp
+[ 55%] Built target rs_control__rosidl_typesupport_c
+[ 63%] Built target rs_control__rosidl_typesupport_introspection_c
+[ 71%] Built target rs_control__rosidl_typesupport_fastrtps_c
+[35m[1mConsolidate compiler generated dependencies of target dual_controller_node[0m
+[ 71%] Built target rs_control
+[ 73%] [32mBuilding CXX object CMakeFiles/dual_controller_node.dir/src/dual_controller_node.cpp.o[0m
+[ 76%] Built target rs_control__py
+[35m[1mConsolidate compiler generated dependencies of target rs_control__rosidl_generator_py[0m
+[ 81%] Built target rs_control__rosidl_generator_py
+[35m[1mConsolidate compiler generated dependencies of target rs_control__rosidl_typesupport_fastrtps_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target rs_control__rosidl_typesupport_introspection_c__pyext[0m
+[35m[1mConsolidate compiler generated dependencies of target rs_control__rosidl_typesupport_c__pyext[0m
+[ 92%] Built target rs_control__rosidl_typesupport_fastrtps_c__pyext
+[ 92%] Built target rs_control__rosidl_typesupport_introspection_c__pyext
+[ 97%] Built target rs_control__rosidl_typesupport_c__pyext
+running egg_info
+writing rs_control.egg-info/PKG-INFO
+writing dependency_links to rs_control.egg-info/dependency_links.txt
+writing top-level names to rs_control.egg-info/top_level.txt
+reading manifest file 'rs_control.egg-info/SOURCES.txt'
+writing manifest file 'rs_control.egg-info/SOURCES.txt'
+[ 97%] Built target ament_cmake_python_build_rs_control_egg
+[100%] [32m[1mLinking CXX executable dual_controller_node[0m
+[100%] Built target dual_controller_node
+-- Install configuration: ""
+-- Installing: /home/tue/rs_control/install/rs_control/share/ament_index/resource_index/rosidl_interfaces/rs_control
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__struct.h
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__functions.c
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__functions.h
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__type_support.h
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/sine_wave_parameters.h
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/environment/library_path.sh
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/environment/library_path.dsv
+-- Installing: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_generator_c.so
+-- Set runtime path of "/home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_generator_c.so" to ""
+-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control
+-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control
+-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__builder.hpp
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__traits.hpp
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__struct.hpp
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__type_support.hpp
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/sine_wave_parameters.hpp
+-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control
+-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/dds_fastrtps
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control
+-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg
+-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__type_support.c
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__rosidl_typesupport_introspection_c.h
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Installing: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_c.so
+-- Set runtime path of "/home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control
+-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg
+-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__type_support.cpp
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_cpp.so
+-- Set runtime path of "/home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_cpp.so" to ""
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/environment/pythonpath.sh
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/environment/pythonpath.dsv
+-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control-0.0.0-py3.10.egg-info
+-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control-0.0.0-py3.10.egg-info/top_level.txt
+-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control-0.0.0-py3.10.egg-info/PKG-INFO
+-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control
+-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/_rs_control_s.ep.rosidl_typesupport_c.c
+-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/__init__.py
+-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/librs_control__rosidl_generator_py.so
+-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/rs_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/rs_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/msg
+-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/msg/_sine_wave_parameters.py
+-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/msg/__init__.py
+-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/msg/_sine_wave_parameters_s.c
+-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/rs_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.c
+-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.c
+Listing '/home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control'...
+Compiling '/home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/__init__.py'...
+Listing '/home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/msg'...
+Compiling '/home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/msg/__init__.py'...
+Compiling '/home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/msg/_sine_wave_parameters.py'...
+-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/rs_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/rs_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/rs_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/rs_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/rs_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/rs_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_generator_py.so
+-- Set runtime path of "/home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_generator_py.so" to ""
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/msg/SineWaveParameters.idl
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/msg/SineWaveParameters.msg
+-- Installing: /home/tue/rs_control/install/rs_control/lib/librob_stride_motor.so
+-- Set runtime path of "/home/tue/rs_control/install/rs_control/lib/librob_stride_motor.so" to ""
+-- Installing: /home/tue/rs_control/install/rs_control/lib/rs_control/main_control_node
+-- Set runtime path of "/home/tue/rs_control/install/rs_control/lib/rs_control/main_control_node" to ""
+-- Installing: /home/tue/rs_control/install/rs_control/lib/rs_control/dual_controller_node
+-- Set runtime path of "/home/tue/rs_control/install/rs_control/lib/rs_control/dual_controller_node" to ""
+-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rs_lib.h
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/rob_stride_motor.h
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/protocol.h
+-- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/can_interface.h
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/launch
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/launch/motor_state_reader.launch.py
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/launch/motor_checker.launch.py
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/launch/dual_controller_with_logging.launch.py
+-- Installing: /home/tue/rs_control/install/rs_control/share/ament_index/resource_index/package_run_dependencies/rs_control
+-- Installing: /home/tue/rs_control/install/rs_control/share/ament_index/resource_index/parent_prefix_path/rs_control
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/environment/ament_prefix_path.sh
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/environment/ament_prefix_path.dsv
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/environment/path.sh
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/environment/path.dsv
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/local_setup.bash
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/local_setup.sh
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/local_setup.zsh
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/local_setup.dsv
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/package.dsv
+-- Installing: /home/tue/rs_control/install/rs_control/share/ament_index/resource_index/packages/rs_control
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_generator_cExport.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_generator_cppExport.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_cExport.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_generator_pyExport.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_generator_pyExport-noconfig.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rosidl_cmake-extras.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_controlConfig.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_controlConfig-version.cmake
+-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/package.xml

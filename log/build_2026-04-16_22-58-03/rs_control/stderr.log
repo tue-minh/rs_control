@@ -1,0 +1,11 @@
+[01m[K/home/tue/rs_control/src/dual_controller_node.cpp:[m[K In member function ‘[01m[Kvoid DualControllerNode::control_loop()[m[K’:
+[01m[K/home/tue/rs_control/src/dual_controller_node.cpp:156:43:[m[K [01;31m[Kerror: [m[K‘[01m[KVELOCITY_MODE[m[K’ is not a member of ‘[01m[KControlMode[m[K’
+  156 |         } else if (mode1_ == ControlMode::[01;31m[KVELOCITY_MODE[m[K) {
+      |                                           [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/tue/rs_control/src/dual_controller_node.cpp:164:43:[m[K [01;31m[Kerror: [m[K‘[01m[KVELOCITY_MODE[m[K’ is not a member of ‘[01m[KControlMode[m[K’
+  164 |         } else if (mode2_ == ControlMode::[01;31m[KVELOCITY_MODE[m[K) {
+      |                                           [01;31m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/dual_controller_node.dir/build.make:76: CMakeFiles/dual_controller_node.dir/src/dual_controller_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:650: CMakeFiles/dual_controller_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

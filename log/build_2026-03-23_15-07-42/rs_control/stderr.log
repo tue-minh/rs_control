@@ -1,7 +1,0 @@
-[01m[K/home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp:[m[K In function ‘[01m[Kbool read_frame(int, can_frame*)[m[K’:
-[01m[K/home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp:67:25:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
-   67 |     struct timeval tv { [01;35m[K.[m[Ktv_sec = 0, .tv_usec = 100000 }; // 100 ms
-      |                         [01;35m[K^[m[K
-[01m[K/home/tue/Documents/ros2_ws/src/rs_control/src/main_control_node.cpp:67:38:[m[K [01;35m[Kwarning: [m[KC++ designated initializers only available with ‘[01m[K-std=c++20[m[K’ or ‘[01m[K-std=gnu++20[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpedantic-Wpedantic]8;;[m[K]
-   67 |     struct timeval tv { .tv_sec = 0, [01;35m[K.[m[Ktv_usec = 100000 }; // 100 ms
-      |                                      [01;35m[K^[m[K

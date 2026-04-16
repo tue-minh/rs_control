@@ -1,0 +1,169 @@
+[0.013s] Invoking command in '/home/tue/rs_control/build/rs_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tue/rs_control/build/rs_control -- -j12 -l12
+[0.069s] [35m[1mConsolidate compiler generated dependencies of target rob_stride_motor[0m
+[0.077s] [  7%] Built target rs_control__cpp
+[0.077s] [ 10%] Built target rs_control__rosidl_generator_c
+[0.086s] [ 15%] [32mBuilding CXX object CMakeFiles/rob_stride_motor.dir/src/rob_stride_motor.cpp.o[0m
+[0.086s] [ 15%] [32mBuilding CXX object CMakeFiles/main_control_node.dir/src/main_control_node.cpp.o[0m
+[0.090s] [ 15%] Built target ament_cmake_python_copy_rs_control
+[0.105s] [ 31%] Built target rs_control__rosidl_typesupport_c
+[0.105s] [ 31%] Built target rs_control__rosidl_typesupport_introspection_c
+[0.105s] [ 39%] Built target rs_control__rosidl_typesupport_fastrtps_c
+[0.109s] [ 47%] Built target rs_control__rosidl_typesupport_introspection_cpp
+[0.117s] [ 63%] Built target rs_control__rosidl_typesupport_cpp
+[0.118s] [ 63%] Built target rs_control__rosidl_typesupport_fastrtps_cpp
+[0.141s] [ 63%] Built target rs_control
+[0.166s] [ 65%] Built target rs_control__py
+[0.190s] [ 71%] Built target rs_control__rosidl_generator_py
+[0.216s] [ 84%] Built target rs_control__rosidl_typesupport_introspection_c__pyext
+[0.216s] [ 84%] Built target rs_control__rosidl_typesupport_c__pyext
+[0.216s] [ 86%] Built target rs_control__rosidl_typesupport_fastrtps_c__pyext
+[0.323s] running egg_info
+[0.324s] writing rs_control.egg-info/PKG-INFO
+[0.324s] writing dependency_links to rs_control.egg-info/dependency_links.txt
+[0.324s] writing top-level names to rs_control.egg-info/top_level.txt
+[0.327s] reading manifest file 'rs_control.egg-info/SOURCES.txt'
+[0.327s] writing manifest file 'rs_control.egg-info/SOURCES.txt'
+[0.376s] [ 86%] Built target ament_cmake_python_build_rs_control_egg
+[0.753s] [ 89%] [32m[1mLinking CXX shared library librob_stride_motor.so[0m
+[0.876s] [ 89%] Built target rob_stride_motor
+[0.906s] [ 92%] [32mBuilding CXX object CMakeFiles/dual_controller_node.dir/src/dual_controller_node.cpp.o[0m
+[8.060s] [ 94%] [32m[1mLinking CXX executable main_control_node[0m
+[8.615s] [ 97%] Built target main_control_node
+[11.703s] [100%] [32m[1mLinking CXX executable dual_controller_node[0m
+[12.510s] [100%] Built target dual_controller_node
+[12.524s] Invoked command in '/home/tue/rs_control/build/rs_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/tue/rs_control/build/rs_control -- -j12 -l12
+[12.536s] Invoking command in '/home/tue/rs_control/build/rs_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tue/rs_control/build/rs_control
+[12.544s] -- Install configuration: ""
+[12.544s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/ament_index/resource_index/rosidl_interfaces/rs_control
+[12.544s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control
+[12.544s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg
+[12.544s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail
+[12.544s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__struct.h
+[12.544s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__functions.c
+[12.544s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__functions.h
+[12.544s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__type_support.h
+[12.544s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/sine_wave_parameters.h
+[12.545s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/rosidl_generator_c__visibility_control.h
+[12.545s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/environment/library_path.sh
+[12.545s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/environment/library_path.dsv
+[12.545s] -- Up-to-date: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_generator_c.so
+[12.545s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control
+[12.545s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg
+[12.545s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[12.545s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail
+[12.545s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__rosidl_typesupport_fastrtps_c.h
+[12.545s] -- Up-to-date: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_fastrtps_c.so
+[12.545s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control
+[12.545s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg
+[12.546s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/rosidl_generator_cpp__visibility_control.hpp
+[12.546s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail
+[12.546s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__builder.hpp
+[12.546s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__traits.hpp
+[12.546s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__struct.hpp
+[12.546s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__type_support.hpp
+[12.546s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/sine_wave_parameters.hpp
+[12.546s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control
+[12.546s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg
+[12.546s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[12.546s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail
+[12.546s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/dds_fastrtps
+[12.546s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__rosidl_typesupport_fastrtps_cpp.hpp
+[12.547s] -- Up-to-date: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_fastrtps_cpp.so
+[12.547s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control
+[12.547s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg
+[12.547s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail
+[12.547s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__type_support.c
+[12.547s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__rosidl_typesupport_introspection_c.h
+[12.547s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[12.547s] -- Up-to-date: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_introspection_c.so
+[12.547s] -- Up-to-date: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_c.so
+[12.547s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control
+[12.547s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg
+[12.547s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail
+[12.547s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__type_support.cpp
+[12.547s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__rosidl_typesupport_introspection_cpp.hpp
+[12.548s] -- Up-to-date: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_introspection_cpp.so
+[12.548s] -- Up-to-date: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_cpp.so
+[12.548s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/environment/pythonpath.sh
+[12.548s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/environment/pythonpath.dsv
+[12.548s] -- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control-0.0.0-py3.10.egg-info
+[12.548s] -- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control-0.0.0-py3.10.egg-info/top_level.txt
+[12.548s] -- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control-0.0.0-py3.10.egg-info/SOURCES.txt
+[12.548s] -- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control-0.0.0-py3.10.egg-info/dependency_links.txt
+[12.548s] -- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control-0.0.0-py3.10.egg-info/PKG-INFO
+[12.548s] -- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control
+[12.548s] -- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/_rs_control_s.ep.rosidl_typesupport_c.c
+[12.548s] -- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/__init__.py
+[12.548s] -- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/librs_control__rosidl_generator_py.so
+[12.549s] -- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/rs_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[12.549s] -- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/rs_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[12.549s] -- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/msg
+[12.549s] -- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/msg/_sine_wave_parameters.py
+[12.549s] -- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/msg/__init__.py
+[12.549s] -- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/msg/_sine_wave_parameters_s.c
+[12.549s] -- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/rs_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[12.549s] -- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.c
+[12.549s] -- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.c
+[12.574s] Listing '/home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control'...
+[12.575s] Listing '/home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/msg'...
+[12.579s] -- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/rs_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[12.579s] -- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/rs_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[12.580s] -- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/rs_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[12.580s] -- Up-to-date: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_generator_py.so
+[12.580s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/msg/SineWaveParameters.idl
+[12.580s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/msg/SineWaveParameters.msg
+[12.580s] -- Installing: /home/tue/rs_control/install/rs_control/lib/librob_stride_motor.so
+[12.581s] -- Set runtime path of "/home/tue/rs_control/install/rs_control/lib/librob_stride_motor.so" to ""
+[12.581s] -- Installing: /home/tue/rs_control/install/rs_control/lib/rs_control/main_control_node
+[12.588s] -- Set runtime path of "/home/tue/rs_control/install/rs_control/lib/rs_control/main_control_node" to ""
+[12.588s] -- Installing: /home/tue/rs_control/install/rs_control/lib/rs_control/dual_controller_node
+[12.599s] -- Set runtime path of "/home/tue/rs_control/install/rs_control/lib/rs_control/dual_controller_node" to ""
+[12.599s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control
+[12.599s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_lib.h
+[12.599s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rob_stride_motor.h
+[12.600s] -- Installing: /home/tue/rs_control/install/rs_control/include/rs_control/protocol.h
+[12.600s] -- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/can_interface.h
+[12.600s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/launch
+[12.600s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/launch/motor_state_reader.launch.py
+[12.600s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/launch/motor_checker.launch.py
+[12.600s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/launch/dual_controller_with_logging.launch.py
+[12.600s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/ament_index/resource_index/package_run_dependencies/rs_control
+[12.601s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/ament_index/resource_index/parent_prefix_path/rs_control
+[12.601s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/environment/ament_prefix_path.sh
+[12.601s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/environment/ament_prefix_path.dsv
+[12.601s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/environment/path.sh
+[12.601s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/environment/path.dsv
+[12.601s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/local_setup.bash
+[12.602s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/local_setup.sh
+[12.602s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/local_setup.zsh
+[12.602s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/local_setup.dsv
+[12.602s] -- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/package.dsv
+[12.602s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/ament_index/resource_index/packages/rs_control
+[12.602s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_generator_cExport.cmake
+[12.602s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_generator_cExport-noconfig.cmake
+[12.602s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_typesupport_fastrtps_cExport.cmake
+[12.602s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[12.602s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_generator_cppExport.cmake
+[12.602s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_typesupport_fastrtps_cppExport.cmake
+[12.602s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[12.602s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_introspection_cExport.cmake
+[12.602s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[12.602s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_cExport.cmake
+[12.602s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_cExport-noconfig.cmake
+[12.602s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_introspection_cppExport.cmake
+[12.603s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[12.603s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_cppExport.cmake
+[12.603s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_cppExport-noconfig.cmake
+[12.603s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_generator_pyExport.cmake
+[12.603s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_generator_pyExport-noconfig.cmake
+[12.603s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rosidl_cmake-extras.cmake
+[12.603s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/ament_cmake_export_include_directories-extras.cmake
+[12.603s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/ament_cmake_export_libraries-extras.cmake
+[12.603s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/ament_cmake_export_targets-extras.cmake
+[12.603s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[12.603s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/ament_cmake_export_dependencies-extras.cmake
+[12.603s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[12.603s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_controlConfig.cmake
+[12.603s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_controlConfig-version.cmake
+[12.603s] -- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/package.xml
+[12.605s] Invoked command in '/home/tue/rs_control/build/rs_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/tue/rs_control/build/rs_control

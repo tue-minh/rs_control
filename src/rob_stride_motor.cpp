@@ -7,6 +7,7 @@
 #include "rs_control/protocol.h"
 
 #include <cstring>
+#include <algorithm>
 #include <thread>
 #include <chrono>
 #include <unistd.h>
@@ -193,6 +194,29 @@ bool RobStrideMotor::write_position_frame(double position) {
     float pos_float = static_cast<float>(position);
     pack_float_le(&data[0], pos_float);
     // data[4-7] can be used for velocity/torque feedforward if needed
+    return send_frame(ext_id, data, 8);
+}
+
+bool RobStrideMotor::write_velocity_frame(double velocity) {
+    // Use OPERATION_CONTROL command for velocity mode control
+    // Similar to MIT frame format but velocity is in bytes 2-3
+    uint32_t ext_id = (CommType::OPERATION_CONTROL << 24) | (0 << 8) | motor_id_;
+    uint8_t data[8] = {0};
+
+    // Clamp velocity to valid range
+    velocity = std::max(-VELOCITY_SCALE, std::min(VELOCITY_SCALE, velocity));
+
+    // Convert velocity to protocol units (big-endian, same as MIT)
+    uint16_t vel_u16 = static_cast<uint16_t>(((velocity / VELOCITY_SCALE) + 1.0) * 0x7FFF);
+
+    // Position field = 0x7FFF (center/neutral)
+    pack_u16_be(&data[0], 0x7FFF);
+    // Velocity field = target velocity
+    pack_u16_be(&data[2], vel_u16);
+    // KP and KD fields = 0 for simple velocity control
+    pack_u16_be(&data[4], 0);
+    pack_u16_be(&data[6], 0);
+
     return send_frame(ext_id, data, 8);
 }
 

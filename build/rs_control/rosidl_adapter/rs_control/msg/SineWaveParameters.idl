@@ -1,0 +1,33 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from rs_control/msg/SineWaveParameters.msg
+// generated code does not contain a copyright notice
+
+
+module rs_control {
+  module msg {
+    @verbatim (language="comment", text=
+      "SineWaveParameters.msg" "\n"
+      "Message for sine wave motion parameters")
+    struct SineWaveParameters {
+      @verbatim (language="comment", text=
+        "Amplitude of sine wave (radians)")
+      double amplitude;
+
+      @verbatim (language="comment", text=
+        "Frequency of sine wave (Hz)")
+      double frequency;
+
+      @verbatim (language="comment", text=
+        "Maximum velocity limit (rad/s)")
+      double velocity_limit;
+
+      @verbatim (language="comment", text=
+        "Position gain")
+      double kp;
+
+      @verbatim (language="comment", text=
+        "Velocity gain")
+      double kd;
+    };
+  };
+};

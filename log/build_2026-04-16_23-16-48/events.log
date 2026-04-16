@@ -1,0 +1,295 @@
+[0.000000] (-) TimerEvent: {}
+[0.000661] (rs_control) JobQueued: {'identifier': 'rs_control', 'dependencies': OrderedDict()}
+[0.000737] (rs_control) JobStarted: {'identifier': 'rs_control'}
+[0.008037] (rs_control) JobProgress: {'identifier': 'rs_control', 'progress': 'cmake'}
+[0.008574] (rs_control) JobProgress: {'identifier': 'rs_control', 'progress': 'build'}
+[0.009247] (rs_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tue/rs_control/build/rs_control', '--', '-j12', '-l12'], 'cwd': '/home/tue/rs_control/build/rs_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tue'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('STM32CubeMX_PATH', '/home/tue/STM32CubeMX'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tue/rs_control/install/rs_control/lib:/home/tue/install/rs_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tue'), ('OLDPWD', '/home/tue'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '919'), ('SYSTEMD_EXEC_PID', '1383'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6238'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tue/rs_control/install:/home/tue/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tue'), ('JOURNAL_STREAM', '8:11844'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tue'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/tue/.npm-global/bin:/opt/ros/humble/bin:/home/tue/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/share/code/bin'), ('SESSION_MANAGER', 'local/tue:@/tmp/.ICE-unix/1031,unix/tue:/tmp/.ICE-unix/1031'), ('INVOCATION_ID', '3a8637e980374c6f90fc21ee7dfcc59c'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RDIEO3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tue/rs_control/install/rs_control:/home/tue/install/rs_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:9a76f143-2325-4028-bc00-1752a9d4470f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tue/rs_control/build/rs_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages:/home/tue/install/rs_control/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/tue/rs_control/install/rs_control:/home/tue/install/rs_control:/opt/ros/humble')]), 'shell': False}
+[0.069299] (rs_control) StdoutLine: {'line': b'[  2%] Built target rs_control__cpp\n'}
+[0.069541] (rs_control) StdoutLine: {'line': b'[ 10%] Built target rs_control__rosidl_generator_c\n'}
+[0.069879] (rs_control) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/rob_stride_motor.dir/src/rob_stride_motor.cpp.o\x1b[0m\n'}
+[0.077824] (rs_control) StdoutLine: {'line': b'[ 21%] Built target main_control_node\n'}
+[0.082652] (rs_control) StdoutLine: {'line': b'[ 21%] Built target ament_cmake_python_copy_rs_control\n'}
+[0.099503] (-) TimerEvent: {}
+[0.099926] (rs_control) StdoutLine: {'line': b'[ 44%] Built target rs_control__rosidl_typesupport_introspection_c\n'}
+[0.100126] (rs_control) StdoutLine: {'line': b'[ 44%] Built target rs_control__rosidl_typesupport_c\n'}
+[0.100180] (rs_control) StdoutLine: {'line': b'[ 44%] Built target rs_control__rosidl_typesupport_cpp\n'}
+[0.101084] (rs_control) StdoutLine: {'line': b'[ 52%] Built target rs_control__rosidl_typesupport_fastrtps_c\n'}
+[0.102950] (rs_control) StdoutLine: {'line': b'[ 60%] Built target rs_control__rosidl_typesupport_fastrtps_cpp\n'}
+[0.104994] (rs_control) StdoutLine: {'line': b'[ 68%] Built target rs_control__rosidl_typesupport_introspection_cpp\n'}
+[0.133790] (rs_control) StdoutLine: {'line': b'[ 68%] Built target rs_control\n'}
+[0.163967] (rs_control) StdoutLine: {'line': b'[ 71%] Built target rs_control__py\n'}
+[0.190536] (rs_control) StdoutLine: {'line': b'[ 76%] Built target rs_control__rosidl_generator_py\n'}
+[0.199649] (-) TimerEvent: {}
+[0.217070] (rs_control) StdoutLine: {'line': b'[ 92%] Built target rs_control__rosidl_typesupport_c__pyext\n'}
+[0.217388] (rs_control) StdoutLine: {'line': b'[ 92%] Built target rs_control__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.217555] (rs_control) StdoutLine: {'line': b'[ 92%] Built target rs_control__rosidl_typesupport_introspection_c__pyext\n'}
+[0.299801] (-) TimerEvent: {}
+[0.330159] (rs_control) StdoutLine: {'line': b'running egg_info\n'}
+[0.330886] (rs_control) StdoutLine: {'line': b'writing rs_control.egg-info/PKG-INFO\n'}
+[0.331126] (rs_control) StdoutLine: {'line': b'writing dependency_links to rs_control.egg-info/dependency_links.txt\n'}
+[0.331350] (rs_control) StdoutLine: {'line': b'writing top-level names to rs_control.egg-info/top_level.txt\n'}
+[0.333499] (rs_control) StdoutLine: {'line': b"reading manifest file 'rs_control.egg-info/SOURCES.txt'\n"}
+[0.333937] (rs_control) StdoutLine: {'line': b"writing manifest file 'rs_control.egg-info/SOURCES.txt'\n"}
+[0.385163] (rs_control) StdoutLine: {'line': b'[ 92%] Built target ament_cmake_python_build_rs_control_egg\n'}
+[0.399919] (-) TimerEvent: {}
+[0.500286] (-) TimerEvent: {}
+[0.600777] (-) TimerEvent: {}
+[0.701249] (-) TimerEvent: {}
+[0.702393] (rs_control) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking CXX shared library librob_stride_motor.so\x1b[0m\n'}
+[0.801404] (-) TimerEvent: {}
+[0.820288] (rs_control) StdoutLine: {'line': b'[ 94%] Built target rob_stride_motor\n'}
+[0.848775] (rs_control) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding CXX object CMakeFiles/dual_controller_node.dir/src/dual_controller_node.cpp.o\x1b[0m\n'}
+[0.901506] (-) TimerEvent: {}
+[1.001826] (-) TimerEvent: {}
+[1.102191] (-) TimerEvent: {}
+[1.202567] (-) TimerEvent: {}
+[1.302950] (-) TimerEvent: {}
+[1.403421] (-) TimerEvent: {}
+[1.504078] (-) TimerEvent: {}
+[1.604497] (-) TimerEvent: {}
+[1.704876] (-) TimerEvent: {}
+[1.805228] (-) TimerEvent: {}
+[1.905564] (-) TimerEvent: {}
+[2.005992] (-) TimerEvent: {}
+[2.106892] (-) TimerEvent: {}
+[2.207283] (-) TimerEvent: {}
+[2.307663] (-) TimerEvent: {}
+[2.408018] (-) TimerEvent: {}
+[2.508596] (-) TimerEvent: {}
+[2.608955] (-) TimerEvent: {}
+[2.709285] (-) TimerEvent: {}
+[2.809693] (-) TimerEvent: {}
+[2.910045] (-) TimerEvent: {}
+[3.010436] (-) TimerEvent: {}
+[3.110781] (-) TimerEvent: {}
+[3.211103] (-) TimerEvent: {}
+[3.311433] (-) TimerEvent: {}
+[3.411774] (-) TimerEvent: {}
+[3.512154] (-) TimerEvent: {}
+[3.612544] (-) TimerEvent: {}
+[3.712920] (-) TimerEvent: {}
+[3.813315] (-) TimerEvent: {}
+[3.913712] (-) TimerEvent: {}
+[4.014145] (-) TimerEvent: {}
+[4.114512] (-) TimerEvent: {}
+[4.214907] (-) TimerEvent: {}
+[4.315327] (-) TimerEvent: {}
+[4.415772] (-) TimerEvent: {}
+[4.516165] (-) TimerEvent: {}
+[4.616494] (-) TimerEvent: {}
+[4.716809] (-) TimerEvent: {}
+[4.817161] (-) TimerEvent: {}
+[4.917556] (-) TimerEvent: {}
+[5.017911] (-) TimerEvent: {}
+[5.118314] (-) TimerEvent: {}
+[5.218746] (-) TimerEvent: {}
+[5.319164] (-) TimerEvent: {}
+[5.419563] (-) TimerEvent: {}
+[5.519917] (-) TimerEvent: {}
+[5.620299] (-) TimerEvent: {}
+[5.720676] (-) TimerEvent: {}
+[5.821044] (-) TimerEvent: {}
+[5.921397] (-) TimerEvent: {}
+[6.021813] (-) TimerEvent: {}
+[6.122192] (-) TimerEvent: {}
+[6.222587] (-) TimerEvent: {}
+[6.323022] (-) TimerEvent: {}
+[6.423435] (-) TimerEvent: {}
+[6.523821] (-) TimerEvent: {}
+[6.624191] (-) TimerEvent: {}
+[6.724567] (-) TimerEvent: {}
+[6.825354] (-) TimerEvent: {}
+[6.925718] (-) TimerEvent: {}
+[7.026055] (-) TimerEvent: {}
+[7.126431] (-) TimerEvent: {}
+[7.226799] (-) TimerEvent: {}
+[7.327142] (-) TimerEvent: {}
+[7.427507] (-) TimerEvent: {}
+[7.527984] (-) TimerEvent: {}
+[7.628413] (-) TimerEvent: {}
+[7.728845] (-) TimerEvent: {}
+[7.829274] (-) TimerEvent: {}
+[7.929678] (-) TimerEvent: {}
+[8.030025] (-) TimerEvent: {}
+[8.130340] (-) TimerEvent: {}
+[8.230761] (-) TimerEvent: {}
+[8.331097] (-) TimerEvent: {}
+[8.431422] (-) TimerEvent: {}
+[8.531818] (-) TimerEvent: {}
+[8.632176] (-) TimerEvent: {}
+[8.732607] (-) TimerEvent: {}
+[8.832968] (-) TimerEvent: {}
+[8.933263] (-) TimerEvent: {}
+[9.033600] (-) TimerEvent: {}
+[9.133998] (-) TimerEvent: {}
+[9.234344] (-) TimerEvent: {}
+[9.334675] (-) TimerEvent: {}
+[9.435127] (-) TimerEvent: {}
+[9.535566] (-) TimerEvent: {}
+[9.636025] (-) TimerEvent: {}
+[9.736468] (-) TimerEvent: {}
+[9.836931] (-) TimerEvent: {}
+[9.937424] (-) TimerEvent: {}
+[10.037858] (-) TimerEvent: {}
+[10.138185] (-) TimerEvent: {}
+[10.238624] (-) TimerEvent: {}
+[10.339033] (-) TimerEvent: {}
+[10.439331] (-) TimerEvent: {}
+[10.539681] (-) TimerEvent: {}
+[10.640312] (-) TimerEvent: {}
+[10.740778] (-) TimerEvent: {}
+[10.841593] (-) TimerEvent: {}
+[10.942061] (-) TimerEvent: {}
+[11.042488] (-) TimerEvent: {}
+[11.143019] (-) TimerEvent: {}
+[11.243464] (-) TimerEvent: {}
+[11.290177] (rs_control) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable dual_controller_node\x1b[0m\n'}
+[11.343623] (-) TimerEvent: {}
+[11.444113] (-) TimerEvent: {}
+[11.544652] (-) TimerEvent: {}
+[11.645263] (-) TimerEvent: {}
+[11.745829] (-) TimerEvent: {}
+[11.846372] (-) TimerEvent: {}
+[11.946754] (-) TimerEvent: {}
+[12.047249] (-) TimerEvent: {}
+[12.146610] (rs_control) StdoutLine: {'line': b'[100%] Built target dual_controller_node\n'}
+[12.147312] (-) TimerEvent: {}
+[12.163073] (rs_control) CommandEnded: {'returncode': 0}
+[12.163785] (rs_control) JobProgress: {'identifier': 'rs_control', 'progress': 'install'}
+[12.174227] (rs_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/tue/rs_control/build/rs_control'], 'cwd': '/home/tue/rs_control/build/rs_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tue'), ('LC_TIME', 'vi_VN'), ('XDG_SESSION_TYPE', 'wayland'), ('STM32CubeMX_PATH', '/home/tue/STM32CubeMX'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tue/rs_control/install/rs_control/lib:/home/tue/install/rs_control/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tue'), ('OLDPWD', '/home/tue'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'vi_VN'), ('MANAGERPID', '919'), ('SYSTEMD_EXEC_PID', '1383'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6238'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tue/rs_control/install:/home/tue/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tue'), ('JOURNAL_STREAM', '8:11844'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tue'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/tue/.npm-global/bin:/opt/ros/humble/bin:/home/tue/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/share/code/bin'), ('SESSION_MANAGER', 'local/tue:@/tmp/.ICE-unix/1031,unix/tue:/tmp/.ICE-unix/1031'), ('INVOCATION_ID', '3a8637e980374c6f90fc21ee7dfcc59c'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'vi_VN'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'vi_VN'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RDIEO3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tue/rs_control/install/rs_control:/home/tue/install/rs_control:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'vi_VN'), ('TERMINATOR_UUID', 'urn:uuid:9a76f143-2325-4028-bc00-1752a9d4470f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'vi_VN'), ('LC_IDENTIFICATION', 'vi_VN'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tue/rs_control/build/rs_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages:/home/tue/install/rs_control/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'vi_VN'), ('LC_PAPER', 'vi_VN'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/tue/rs_control/install/rs_control:/home/tue/install/rs_control:/opt/ros/humble')]), 'shell': False}
+[12.187592] (rs_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.188122] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/ament_index/resource_index/rosidl_interfaces/rs_control\n'}
+[12.188258] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control\n'}
+[12.188396] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg\n'}
+[12.188502] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail\n'}
+[12.188651] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__struct.h\n'}
+[12.188797] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__functions.c\n'}
+[12.188910] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__functions.h\n'}
+[12.189035] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__type_support.h\n'}
+[12.189140] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/sine_wave_parameters.h\n'}
+[12.189272] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/rosidl_generator_c__visibility_control.h\n'}
+[12.189417] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/environment/library_path.sh\n'}
+[12.189564] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/environment/library_path.dsv\n'}
+[12.189676] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_generator_c.so\n'}
+[12.189834] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control\n'}
+[12.189913] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg\n'}
+[12.189960] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[12.190007] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail\n'}
+[12.190053] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__rosidl_typesupport_fastrtps_c.h\n'}
+[12.190130] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_fastrtps_c.so\n'}
+[12.190179] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control\n'}
+[12.190235] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg\n'}
+[12.190283] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[12.190362] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail\n'}
+[12.190436] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__builder.hpp\n'}
+[12.190488] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__traits.hpp\n'}
+[12.190538] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__struct.hpp\n'}
+[12.190589] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__type_support.hpp\n'}
+[12.190667] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/sine_wave_parameters.hpp\n'}
+[12.190714] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control\n'}
+[12.190810] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg\n'}
+[12.190878] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[12.190927] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail\n'}
+[12.190980] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/dds_fastrtps\n'}
+[12.191026] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.191080] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_fastrtps_cpp.so\n'}
+[12.191128] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control\n'}
+[12.191201] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg\n'}
+[12.191248] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail\n'}
+[12.191296] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__type_support.c\n'}
+[12.191345] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__rosidl_typesupport_introspection_c.h\n'}
+[12.191439] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[12.191538] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_introspection_c.so\n'}
+[12.191608] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_c.so\n'}
+[12.191676] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control\n'}
+[12.191795] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg\n'}
+[12.191892] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail\n'}
+[12.191938] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__type_support.cpp\n'}
+[12.191990] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_control/msg/detail/sine_wave_parameters__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.192203] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_introspection_cpp.so\n'}
+[12.192592] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_typesupport_cpp.so\n'}
+[12.192921] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/environment/pythonpath.sh\n'}
+[12.193082] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/environment/pythonpath.dsv\n'}
+[12.193192] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control-0.0.0-py3.10.egg-info\n'}
+[12.193264] (rs_control) StdoutLine: {'line': b'-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[12.193542] (rs_control) StdoutLine: {'line': b'-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[12.193704] (rs_control) StdoutLine: {'line': b'-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[12.193878] (rs_control) StdoutLine: {'line': b'-- Installing: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[12.194098] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control\n'}
+[12.194272] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/_rs_control_s.ep.rosidl_typesupport_c.c\n'}
+[12.194334] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/__init__.py\n'}
+[12.194388] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/librs_control__rosidl_generator_py.so\n'}
+[12.194438] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/rs_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.194490] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/rs_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.194571] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/msg\n'}
+[12.194669] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/msg/_sine_wave_parameters.py\n'}
+[12.194722] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/msg/__init__.py\n'}
+[12.194783] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/msg/_sine_wave_parameters_s.c\n'}
+[12.194831] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/rs_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.194884] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[12.194929] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[12.243121] (rs_control) StdoutLine: {'line': b"Listing '/home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control'...\n"}
+[12.243539] (rs_control) StdoutLine: {'line': b"Listing '/home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/msg'...\n"}
+[12.247496] (-) TimerEvent: {}
+[12.255823] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/rs_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.256834] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/rs_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.257029] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/local/lib/python3.10/dist-packages/rs_control/rs_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.257118] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/lib/librs_control__rosidl_generator_py.so\n'}
+[12.257232] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/msg/SineWaveParameters.idl\n'}
+[12.257300] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/msg/SineWaveParameters.msg\n'}
+[12.257362] (rs_control) StdoutLine: {'line': b'-- Installing: /home/tue/rs_control/install/rs_control/lib/librob_stride_motor.so\n'}
+[12.258103] (rs_control) StdoutLine: {'line': b'-- Set runtime path of "/home/tue/rs_control/install/rs_control/lib/librob_stride_motor.so" to ""\n'}
+[12.258313] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/lib/rs_control/main_control_node\n'}
+[12.258750] (rs_control) StdoutLine: {'line': b'-- Installing: /home/tue/rs_control/install/rs_control/lib/rs_control/dual_controller_node\n'}
+[12.273969] (rs_control) StdoutLine: {'line': b'-- Set runtime path of "/home/tue/rs_control/install/rs_control/lib/rs_control/dual_controller_node" to ""\n'}
+[12.274291] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control\n'}
+[12.274348] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rs_lib.h\n'}
+[12.274399] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/rob_stride_motor.h\n'}
+[12.274447] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/protocol.h\n'}
+[12.274494] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/include/rs_control/can_interface.h\n'}
+[12.274541] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/launch\n'}
+[12.274606] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/launch/motor_state_reader.launch.py\n'}
+[12.274699] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/launch/motor_checker.launch.py\n'}
+[12.274802] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/launch/dual_controller_with_logging.launch.py\n'}
+[12.274908] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/ament_index/resource_index/package_run_dependencies/rs_control\n'}
+[12.274980] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/ament_index/resource_index/parent_prefix_path/rs_control\n'}
+[12.275035] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/environment/ament_prefix_path.sh\n'}
+[12.275099] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/environment/ament_prefix_path.dsv\n'}
+[12.275144] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/environment/path.sh\n'}
+[12.275187] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/environment/path.dsv\n'}
+[12.275230] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/local_setup.bash\n'}
+[12.275277] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/local_setup.sh\n'}
+[12.275325] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/local_setup.zsh\n'}
+[12.275373] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/local_setup.dsv\n'}
+[12.275433] (rs_control) StdoutLine: {'line': b'-- Installing: /home/tue/rs_control/install/rs_control/share/rs_control/package.dsv\n'}
+[12.275646] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/ament_index/resource_index/packages/rs_control\n'}
+[12.276169] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_generator_cExport.cmake\n'}
+[12.276286] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_generator_cExport-noconfig.cmake\n'}
+[12.276336] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[12.276849] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[12.276963] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_generator_cppExport.cmake\n'}
+[12.277031] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[12.277083] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[12.277162] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_introspection_cExport.cmake\n'}
+[12.277218] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[12.277289] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_cExport.cmake\n'}
+[12.277360] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[12.277411] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[12.277478] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[12.277538] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_cppExport.cmake\n'}
+[12.277585] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_control__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[12.277632] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_generator_pyExport.cmake\n'}
+[12.277679] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/export_rs_control__rosidl_generator_pyExport-noconfig.cmake\n'}
+[12.277733] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rosidl_cmake-extras.cmake\n'}
+[12.277821] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[12.277867] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[12.277912] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[12.277957] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[12.278023] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[12.278067] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[12.278110] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_controlConfig.cmake\n'}
+[12.278153] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/cmake/rs_controlConfig-version.cmake\n'}
+[12.278200] (rs_control) StdoutLine: {'line': b'-- Up-to-date: /home/tue/rs_control/install/rs_control/share/rs_control/package.xml\n'}
+[12.281297] (rs_control) CommandEnded: {'returncode': 0}
+[12.313565] (rs_control) JobEnded: {'identifier': 'rs_control', 'rc': 0}
+[12.314590] (-) EventReactorShutdown: {}

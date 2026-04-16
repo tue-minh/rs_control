@@ -1,6 +1,9 @@
 source;share/rs_control/hook/cmake_prefix_path.ps1
 source;share/rs_control/hook/cmake_prefix_path.dsv
 source;share/rs_control/hook/cmake_prefix_path.sh
+source;share/rs_control/hook/ld_library_path_lib.ps1
+source;share/rs_control/hook/ld_library_path_lib.dsv
+source;share/rs_control/hook/ld_library_path_lib.sh
 source;share/rs_control/local_setup.bash
 source;share/rs_control/local_setup.dsv
 source;share/rs_control/local_setup.ps1

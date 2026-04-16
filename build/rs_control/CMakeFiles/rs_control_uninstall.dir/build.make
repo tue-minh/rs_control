@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tue/Documents/ros2_ws/src/rs_control
+CMAKE_SOURCE_DIR = /home/tue/rs_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tue/Documents/ros2_ws/src/rs_control/build/rs_control
+CMAKE_BINARY_DIR = /home/tue/rs_control/build/rs_control
 
 # Utility rule file for rs_control_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/rs_control_uninstall.dir/compiler_depend.make
 include CMakeFiles/rs_control_uninstall.dir/progress.make
 
 CMakeFiles/rs_control_uninstall:
-	/usr/bin/cmake -P /home/tue/Documents/ros2_ws/src/rs_control/build/rs_control/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/tue/rs_control/build/rs_control/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 rs_control_uninstall: CMakeFiles/rs_control_uninstall
 rs_control_uninstall: CMakeFiles/rs_control_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/rs_control_uninstall.dir/clean:
 .PHONY : CMakeFiles/rs_control_uninstall.dir/clean
 
 CMakeFiles/rs_control_uninstall.dir/depend:
-	cd /home/tue/Documents/ros2_ws/src/rs_control/build/rs_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tue/Documents/ros2_ws/src/rs_control /home/tue/Documents/ros2_ws/src/rs_control /home/tue/Documents/ros2_ws/src/rs_control/build/rs_control /home/tue/Documents/ros2_ws/src/rs_control/build/rs_control /home/tue/Documents/ros2_ws/src/rs_control/build/rs_control/CMakeFiles/rs_control_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tue/rs_control/build/rs_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tue/rs_control /home/tue/rs_control /home/tue/rs_control/build/rs_control /home/tue/rs_control/build/rs_control /home/tue/rs_control/build/rs_control/CMakeFiles/rs_control_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rs_control_uninstall.dir/depend
 

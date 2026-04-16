@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tue/Documents/ros2_ws/src/rs_control
+CMAKE_SOURCE_DIR = /home/tue/rs_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tue/Documents/ros2_ws/src/rs_control/build/rs_control
+CMAKE_BINARY_DIR = /home/tue/rs_control/build/rs_control
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tue/Documents/ros2_ws/src/rs_control/build/rs_control/CMakeFiles /home/tue/Documents/ros2_ws/src/rs_control/build/rs_control//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tue/rs_control/build/rs_control/CMakeFiles /home/tue/rs_control/build/rs_control//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tue/Documents/ros2_ws/src/rs_control/build/rs_control/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tue/rs_control/build/rs_control/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -198,6 +198,214 @@ rs_control_uninstall/fast:
 .PHONY : rs_control_uninstall/fast
 
 #=============================================================================
+# Target rules for targets named rs_control
+
+# Build rule for target.
+rs_control: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rs_control
+.PHONY : rs_control
+
+# fast build rule for target.
+rs_control/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control.dir/build.make CMakeFiles/rs_control.dir/build
+.PHONY : rs_control/fast
+
+#=============================================================================
+# Target rules for targets named rs_control__rosidl_generator_c
+
+# Build rule for target.
+rs_control__rosidl_generator_c: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rs_control__rosidl_generator_c
+.PHONY : rs_control__rosidl_generator_c
+
+# fast build rule for target.
+rs_control__rosidl_generator_c/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_generator_c.dir/build.make CMakeFiles/rs_control__rosidl_generator_c.dir/build
+.PHONY : rs_control__rosidl_generator_c/fast
+
+#=============================================================================
+# Target rules for targets named rs_control__rosidl_typesupport_fastrtps_c
+
+# Build rule for target.
+rs_control__rosidl_typesupport_fastrtps_c: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rs_control__rosidl_typesupport_fastrtps_c
+.PHONY : rs_control__rosidl_typesupport_fastrtps_c
+
+# fast build rule for target.
+rs_control__rosidl_typesupport_fastrtps_c/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_fastrtps_c.dir/build
+.PHONY : rs_control__rosidl_typesupport_fastrtps_c/fast
+
+#=============================================================================
+# Target rules for targets named rs_control__cpp
+
+# Build rule for target.
+rs_control__cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rs_control__cpp
+.PHONY : rs_control__cpp
+
+# fast build rule for target.
+rs_control__cpp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__cpp.dir/build.make CMakeFiles/rs_control__cpp.dir/build
+.PHONY : rs_control__cpp/fast
+
+#=============================================================================
+# Target rules for targets named rs_control__rosidl_typesupport_fastrtps_cpp
+
+# Build rule for target.
+rs_control__rosidl_typesupport_fastrtps_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rs_control__rosidl_typesupport_fastrtps_cpp
+.PHONY : rs_control__rosidl_typesupport_fastrtps_cpp
+
+# fast build rule for target.
+rs_control__rosidl_typesupport_fastrtps_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_fastrtps_cpp.dir/build
+.PHONY : rs_control__rosidl_typesupport_fastrtps_cpp/fast
+
+#=============================================================================
+# Target rules for targets named rs_control__rosidl_typesupport_introspection_c
+
+# Build rule for target.
+rs_control__rosidl_typesupport_introspection_c: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rs_control__rosidl_typesupport_introspection_c
+.PHONY : rs_control__rosidl_typesupport_introspection_c
+
+# fast build rule for target.
+rs_control__rosidl_typesupport_introspection_c/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_introspection_c.dir/build
+.PHONY : rs_control__rosidl_typesupport_introspection_c/fast
+
+#=============================================================================
+# Target rules for targets named rs_control__rosidl_typesupport_c
+
+# Build rule for target.
+rs_control__rosidl_typesupport_c: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rs_control__rosidl_typesupport_c
+.PHONY : rs_control__rosidl_typesupport_c
+
+# fast build rule for target.
+rs_control__rosidl_typesupport_c/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_c.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_c.dir/build
+.PHONY : rs_control__rosidl_typesupport_c/fast
+
+#=============================================================================
+# Target rules for targets named rs_control__rosidl_typesupport_introspection_cpp
+
+# Build rule for target.
+rs_control__rosidl_typesupport_introspection_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rs_control__rosidl_typesupport_introspection_cpp
+.PHONY : rs_control__rosidl_typesupport_introspection_cpp
+
+# fast build rule for target.
+rs_control__rosidl_typesupport_introspection_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_introspection_cpp.dir/build
+.PHONY : rs_control__rosidl_typesupport_introspection_cpp/fast
+
+#=============================================================================
+# Target rules for targets named rs_control__rosidl_typesupport_cpp
+
+# Build rule for target.
+rs_control__rosidl_typesupport_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rs_control__rosidl_typesupport_cpp
+.PHONY : rs_control__rosidl_typesupport_cpp
+
+# fast build rule for target.
+rs_control__rosidl_typesupport_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_cpp.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_cpp.dir/build
+.PHONY : rs_control__rosidl_typesupport_cpp/fast
+
+#=============================================================================
+# Target rules for targets named ament_cmake_python_copy_rs_control
+
+# Build rule for target.
+ament_cmake_python_copy_rs_control: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_rs_control
+.PHONY : ament_cmake_python_copy_rs_control
+
+# fast build rule for target.
+ament_cmake_python_copy_rs_control/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_rs_control.dir/build.make CMakeFiles/ament_cmake_python_copy_rs_control.dir/build
+.PHONY : ament_cmake_python_copy_rs_control/fast
+
+#=============================================================================
+# Target rules for targets named ament_cmake_python_build_rs_control_egg
+
+# Build rule for target.
+ament_cmake_python_build_rs_control_egg: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_build_rs_control_egg
+.PHONY : ament_cmake_python_build_rs_control_egg
+
+# fast build rule for target.
+ament_cmake_python_build_rs_control_egg/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_build_rs_control_egg.dir/build.make CMakeFiles/ament_cmake_python_build_rs_control_egg.dir/build
+.PHONY : ament_cmake_python_build_rs_control_egg/fast
+
+#=============================================================================
+# Target rules for targets named rs_control__rosidl_generator_py
+
+# Build rule for target.
+rs_control__rosidl_generator_py: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rs_control__rosidl_generator_py
+.PHONY : rs_control__rosidl_generator_py
+
+# fast build rule for target.
+rs_control__rosidl_generator_py/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_generator_py.dir/build.make CMakeFiles/rs_control__rosidl_generator_py.dir/build
+.PHONY : rs_control__rosidl_generator_py/fast
+
+#=============================================================================
+# Target rules for targets named rs_control__rosidl_typesupport_fastrtps_c__pyext
+
+# Build rule for target.
+rs_control__rosidl_typesupport_fastrtps_c__pyext: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rs_control__rosidl_typesupport_fastrtps_c__pyext
+.PHONY : rs_control__rosidl_typesupport_fastrtps_c__pyext
+
+# fast build rule for target.
+rs_control__rosidl_typesupport_fastrtps_c__pyext/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_fastrtps_c__pyext.dir/build
+.PHONY : rs_control__rosidl_typesupport_fastrtps_c__pyext/fast
+
+#=============================================================================
+# Target rules for targets named rs_control__rosidl_typesupport_introspection_c__pyext
+
+# Build rule for target.
+rs_control__rosidl_typesupport_introspection_c__pyext: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rs_control__rosidl_typesupport_introspection_c__pyext
+.PHONY : rs_control__rosidl_typesupport_introspection_c__pyext
+
+# fast build rule for target.
+rs_control__rosidl_typesupport_introspection_c__pyext/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_introspection_c__pyext.dir/build
+.PHONY : rs_control__rosidl_typesupport_introspection_c__pyext/fast
+
+#=============================================================================
+# Target rules for targets named rs_control__rosidl_typesupport_c__pyext
+
+# Build rule for target.
+rs_control__rosidl_typesupport_c__pyext: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rs_control__rosidl_typesupport_c__pyext
+.PHONY : rs_control__rosidl_typesupport_c__pyext
+
+# fast build rule for target.
+rs_control__rosidl_typesupport_c__pyext/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_c__pyext.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_c__pyext.dir/build
+.PHONY : rs_control__rosidl_typesupport_c__pyext/fast
+
+#=============================================================================
+# Target rules for targets named rob_stride_motor
+
+# Build rule for target.
+rob_stride_motor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rob_stride_motor
+.PHONY : rob_stride_motor
+
+# fast build rule for target.
+rob_stride_motor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rob_stride_motor.dir/build.make CMakeFiles/rob_stride_motor.dir/build
+.PHONY : rob_stride_motor/fast
+
+#=============================================================================
 # Target rules for targets named main_control_node
 
 # Build rule for target.
@@ -209,6 +417,296 @@ main_control_node: cmake_check_build_system
 main_control_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_control_node.dir/build.make CMakeFiles/main_control_node.dir/build
 .PHONY : main_control_node/fast
+
+#=============================================================================
+# Target rules for targets named dual_controller_node
+
+# Build rule for target.
+dual_controller_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dual_controller_node
+.PHONY : dual_controller_node
+
+# fast build rule for target.
+dual_controller_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dual_controller_node.dir/build.make CMakeFiles/dual_controller_node.dir/build
+.PHONY : dual_controller_node/fast
+
+#=============================================================================
+# Target rules for targets named rs_control__py
+
+# Build rule for target.
+rs_control__py: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rs_control__py
+.PHONY : rs_control__py
+
+# fast build rule for target.
+rs_control__py/fast:
+	$(MAKE) $(MAKESILENT) -f rs_control__py/CMakeFiles/rs_control__py.dir/build.make rs_control__py/CMakeFiles/rs_control__py.dir/build
+.PHONY : rs_control__py/fast
+
+rosidl_generator_c/rs_control/msg/detail/sine_wave_parameters__functions.o: rosidl_generator_c/rs_control/msg/detail/sine_wave_parameters__functions.c.o
+.PHONY : rosidl_generator_c/rs_control/msg/detail/sine_wave_parameters__functions.o
+
+# target to build an object file
+rosidl_generator_c/rs_control/msg/detail/sine_wave_parameters__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_generator_c.dir/build.make CMakeFiles/rs_control__rosidl_generator_c.dir/rosidl_generator_c/rs_control/msg/detail/sine_wave_parameters__functions.c.o
+.PHONY : rosidl_generator_c/rs_control/msg/detail/sine_wave_parameters__functions.c.o
+
+rosidl_generator_c/rs_control/msg/detail/sine_wave_parameters__functions.i: rosidl_generator_c/rs_control/msg/detail/sine_wave_parameters__functions.c.i
+.PHONY : rosidl_generator_c/rs_control/msg/detail/sine_wave_parameters__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/rs_control/msg/detail/sine_wave_parameters__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_generator_c.dir/build.make CMakeFiles/rs_control__rosidl_generator_c.dir/rosidl_generator_c/rs_control/msg/detail/sine_wave_parameters__functions.c.i
+.PHONY : rosidl_generator_c/rs_control/msg/detail/sine_wave_parameters__functions.c.i
+
+rosidl_generator_c/rs_control/msg/detail/sine_wave_parameters__functions.s: rosidl_generator_c/rs_control/msg/detail/sine_wave_parameters__functions.c.s
+.PHONY : rosidl_generator_c/rs_control/msg/detail/sine_wave_parameters__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/rs_control/msg/detail/sine_wave_parameters__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_generator_c.dir/build.make CMakeFiles/rs_control__rosidl_generator_c.dir/rosidl_generator_c/rs_control/msg/detail/sine_wave_parameters__functions.c.s
+.PHONY : rosidl_generator_c/rs_control/msg/detail/sine_wave_parameters__functions.c.s
+
+rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_c.o: rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_c.c.o
+.PHONY : rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_c.o
+
+# target to build an object file
+rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_c.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_c__pyext.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_c.c.o
+.PHONY : rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_c.c.o
+
+rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_c.i: rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_c.c.i
+.PHONY : rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_c.i
+
+# target to preprocess a source file
+rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_c__pyext.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_c.c.i
+.PHONY : rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_c.c.i
+
+rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_c.s: rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_c.c.s
+.PHONY : rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_c.s
+
+# target to generate assembly for a file
+rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_c__pyext.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_c.c.s
+.PHONY : rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_c.c.s
+
+rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.o: rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.c.o
+.PHONY : rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.o
+
+# target to build an object file
+rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.c.o
+.PHONY : rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.c.o
+
+rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.i: rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.c.i
+.PHONY : rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.i
+
+# target to preprocess a source file
+rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.c.i
+.PHONY : rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.c.i
+
+rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.s: rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.c.s
+.PHONY : rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.s
+
+# target to generate assembly for a file
+rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.c.s
+.PHONY : rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.c.s
+
+rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.o: rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.c.o
+.PHONY : rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.o
+
+# target to build an object file
+rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.c.o
+.PHONY : rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.c.o
+
+rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.i: rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.c.i
+.PHONY : rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.i
+
+# target to preprocess a source file
+rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.c.i
+.PHONY : rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.c.i
+
+rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.s: rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.c.s
+.PHONY : rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.s
+
+# target to generate assembly for a file
+rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.c.s
+.PHONY : rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.c.s
+
+rosidl_generator_py/rs_control/msg/_sine_wave_parameters_s.o: rosidl_generator_py/rs_control/msg/_sine_wave_parameters_s.c.o
+.PHONY : rosidl_generator_py/rs_control/msg/_sine_wave_parameters_s.o
+
+# target to build an object file
+rosidl_generator_py/rs_control/msg/_sine_wave_parameters_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_generator_py.dir/build.make CMakeFiles/rs_control__rosidl_generator_py.dir/rosidl_generator_py/rs_control/msg/_sine_wave_parameters_s.c.o
+.PHONY : rosidl_generator_py/rs_control/msg/_sine_wave_parameters_s.c.o
+
+rosidl_generator_py/rs_control/msg/_sine_wave_parameters_s.i: rosidl_generator_py/rs_control/msg/_sine_wave_parameters_s.c.i
+.PHONY : rosidl_generator_py/rs_control/msg/_sine_wave_parameters_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/rs_control/msg/_sine_wave_parameters_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_generator_py.dir/build.make CMakeFiles/rs_control__rosidl_generator_py.dir/rosidl_generator_py/rs_control/msg/_sine_wave_parameters_s.c.i
+.PHONY : rosidl_generator_py/rs_control/msg/_sine_wave_parameters_s.c.i
+
+rosidl_generator_py/rs_control/msg/_sine_wave_parameters_s.s: rosidl_generator_py/rs_control/msg/_sine_wave_parameters_s.c.s
+.PHONY : rosidl_generator_py/rs_control/msg/_sine_wave_parameters_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/rs_control/msg/_sine_wave_parameters_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_generator_py.dir/build.make CMakeFiles/rs_control__rosidl_generator_py.dir/rosidl_generator_py/rs_control/msg/_sine_wave_parameters_s.c.s
+.PHONY : rosidl_generator_py/rs_control/msg/_sine_wave_parameters_s.c.s
+
+rosidl_typesupport_c/rs_control/msg/sine_wave_parameters__type_support.o: rosidl_typesupport_c/rs_control/msg/sine_wave_parameters__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/rs_control/msg/sine_wave_parameters__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/rs_control/msg/sine_wave_parameters__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_c.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/rs_control/msg/sine_wave_parameters__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/rs_control/msg/sine_wave_parameters__type_support.cpp.o
+
+rosidl_typesupport_c/rs_control/msg/sine_wave_parameters__type_support.i: rosidl_typesupport_c/rs_control/msg/sine_wave_parameters__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/rs_control/msg/sine_wave_parameters__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/rs_control/msg/sine_wave_parameters__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_c.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/rs_control/msg/sine_wave_parameters__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/rs_control/msg/sine_wave_parameters__type_support.cpp.i
+
+rosidl_typesupport_c/rs_control/msg/sine_wave_parameters__type_support.s: rosidl_typesupport_c/rs_control/msg/sine_wave_parameters__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/rs_control/msg/sine_wave_parameters__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/rs_control/msg/sine_wave_parameters__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_c.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/rs_control/msg/sine_wave_parameters__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/rs_control/msg/sine_wave_parameters__type_support.cpp.s
+
+rosidl_typesupport_cpp/rs_control/msg/sine_wave_parameters__type_support.o: rosidl_typesupport_cpp/rs_control/msg/sine_wave_parameters__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/rs_control/msg/sine_wave_parameters__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/rs_control/msg/sine_wave_parameters__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_cpp.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rs_control/msg/sine_wave_parameters__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/rs_control/msg/sine_wave_parameters__type_support.cpp.o
+
+rosidl_typesupport_cpp/rs_control/msg/sine_wave_parameters__type_support.i: rosidl_typesupport_cpp/rs_control/msg/sine_wave_parameters__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/rs_control/msg/sine_wave_parameters__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/rs_control/msg/sine_wave_parameters__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_cpp.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rs_control/msg/sine_wave_parameters__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/rs_control/msg/sine_wave_parameters__type_support.cpp.i
+
+rosidl_typesupport_cpp/rs_control/msg/sine_wave_parameters__type_support.s: rosidl_typesupport_cpp/rs_control/msg/sine_wave_parameters__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/rs_control/msg/sine_wave_parameters__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/rs_control/msg/sine_wave_parameters__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_cpp.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rs_control/msg/sine_wave_parameters__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/rs_control/msg/sine_wave_parameters__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_c/rs_control/msg/detail/sine_wave_parameters__type_support_c.o: rosidl_typesupport_fastrtps_c/rs_control/msg/detail/sine_wave_parameters__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/rs_control/msg/detail/sine_wave_parameters__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/rs_control/msg/detail/sine_wave_parameters__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rs_control/msg/detail/sine_wave_parameters__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/rs_control/msg/detail/sine_wave_parameters__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/rs_control/msg/detail/sine_wave_parameters__type_support_c.i: rosidl_typesupport_fastrtps_c/rs_control/msg/detail/sine_wave_parameters__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/rs_control/msg/detail/sine_wave_parameters__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/rs_control/msg/detail/sine_wave_parameters__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rs_control/msg/detail/sine_wave_parameters__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/rs_control/msg/detail/sine_wave_parameters__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/rs_control/msg/detail/sine_wave_parameters__type_support_c.s: rosidl_typesupport_fastrtps_c/rs_control/msg/detail/sine_wave_parameters__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/rs_control/msg/detail/sine_wave_parameters__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/rs_control/msg/detail/sine_wave_parameters__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rs_control/msg/detail/sine_wave_parameters__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/rs_control/msg/detail/sine_wave_parameters__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/rs_control/msg/detail/dds_fastrtps/sine_wave_parameters__type_support.o: rosidl_typesupport_fastrtps_cpp/rs_control/msg/detail/dds_fastrtps/sine_wave_parameters__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/rs_control/msg/detail/dds_fastrtps/sine_wave_parameters__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/rs_control/msg/detail/dds_fastrtps/sine_wave_parameters__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rs_control/msg/detail/dds_fastrtps/sine_wave_parameters__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/rs_control/msg/detail/dds_fastrtps/sine_wave_parameters__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/rs_control/msg/detail/dds_fastrtps/sine_wave_parameters__type_support.i: rosidl_typesupport_fastrtps_cpp/rs_control/msg/detail/dds_fastrtps/sine_wave_parameters__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/rs_control/msg/detail/dds_fastrtps/sine_wave_parameters__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/rs_control/msg/detail/dds_fastrtps/sine_wave_parameters__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rs_control/msg/detail/dds_fastrtps/sine_wave_parameters__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/rs_control/msg/detail/dds_fastrtps/sine_wave_parameters__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/rs_control/msg/detail/dds_fastrtps/sine_wave_parameters__type_support.s: rosidl_typesupport_fastrtps_cpp/rs_control/msg/detail/dds_fastrtps/sine_wave_parameters__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/rs_control/msg/detail/dds_fastrtps/sine_wave_parameters__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/rs_control/msg/detail/dds_fastrtps/sine_wave_parameters__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rs_control/msg/detail/dds_fastrtps/sine_wave_parameters__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/rs_control/msg/detail/dds_fastrtps/sine_wave_parameters__type_support.cpp.s
+
+rosidl_typesupport_introspection_c/rs_control/msg/detail/sine_wave_parameters__type_support.o: rosidl_typesupport_introspection_c/rs_control/msg/detail/sine_wave_parameters__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/rs_control/msg/detail/sine_wave_parameters__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/rs_control/msg/detail/sine_wave_parameters__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rs_control/msg/detail/sine_wave_parameters__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/rs_control/msg/detail/sine_wave_parameters__type_support.c.o
+
+rosidl_typesupport_introspection_c/rs_control/msg/detail/sine_wave_parameters__type_support.i: rosidl_typesupport_introspection_c/rs_control/msg/detail/sine_wave_parameters__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/rs_control/msg/detail/sine_wave_parameters__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/rs_control/msg/detail/sine_wave_parameters__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rs_control/msg/detail/sine_wave_parameters__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/rs_control/msg/detail/sine_wave_parameters__type_support.c.i
+
+rosidl_typesupport_introspection_c/rs_control/msg/detail/sine_wave_parameters__type_support.s: rosidl_typesupport_introspection_c/rs_control/msg/detail/sine_wave_parameters__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/rs_control/msg/detail/sine_wave_parameters__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/rs_control/msg/detail/sine_wave_parameters__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rs_control/msg/detail/sine_wave_parameters__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/rs_control/msg/detail/sine_wave_parameters__type_support.c.s
+
+rosidl_typesupport_introspection_cpp/rs_control/msg/detail/sine_wave_parameters__type_support.o: rosidl_typesupport_introspection_cpp/rs_control/msg/detail/sine_wave_parameters__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/rs_control/msg/detail/sine_wave_parameters__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/rs_control/msg/detail/sine_wave_parameters__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rs_control/msg/detail/sine_wave_parameters__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/rs_control/msg/detail/sine_wave_parameters__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/rs_control/msg/detail/sine_wave_parameters__type_support.i: rosidl_typesupport_introspection_cpp/rs_control/msg/detail/sine_wave_parameters__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/rs_control/msg/detail/sine_wave_parameters__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/rs_control/msg/detail/sine_wave_parameters__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rs_control/msg/detail/sine_wave_parameters__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/rs_control/msg/detail/sine_wave_parameters__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/rs_control/msg/detail/sine_wave_parameters__type_support.s: rosidl_typesupport_introspection_cpp/rs_control/msg/detail/sine_wave_parameters__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/rs_control/msg/detail/sine_wave_parameters__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/rs_control/msg/detail/sine_wave_parameters__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rs_control__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/rs_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rs_control/msg/detail/sine_wave_parameters__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/rs_control/msg/detail/sine_wave_parameters__type_support.cpp.s
 
 src/can_interface.o: src/can_interface.cpp.o
 .PHONY : src/can_interface.o
@@ -234,6 +732,30 @@ src/can_interface.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_control_node.dir/build.make CMakeFiles/main_control_node.dir/src/can_interface.cpp.s
 .PHONY : src/can_interface.cpp.s
 
+src/dual_controller_node.o: src/dual_controller_node.cpp.o
+.PHONY : src/dual_controller_node.o
+
+# target to build an object file
+src/dual_controller_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dual_controller_node.dir/build.make CMakeFiles/dual_controller_node.dir/src/dual_controller_node.cpp.o
+.PHONY : src/dual_controller_node.cpp.o
+
+src/dual_controller_node.i: src/dual_controller_node.cpp.i
+.PHONY : src/dual_controller_node.i
+
+# target to preprocess a source file
+src/dual_controller_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dual_controller_node.dir/build.make CMakeFiles/dual_controller_node.dir/src/dual_controller_node.cpp.i
+.PHONY : src/dual_controller_node.cpp.i
+
+src/dual_controller_node.s: src/dual_controller_node.cpp.s
+.PHONY : src/dual_controller_node.s
+
+# target to generate assembly for a file
+src/dual_controller_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dual_controller_node.dir/build.make CMakeFiles/dual_controller_node.dir/src/dual_controller_node.cpp.s
+.PHONY : src/dual_controller_node.cpp.s
+
 src/main_control_node.o: src/main_control_node.cpp.o
 .PHONY : src/main_control_node.o
 
@@ -258,6 +780,30 @@ src/main_control_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_control_node.dir/build.make CMakeFiles/main_control_node.dir/src/main_control_node.cpp.s
 .PHONY : src/main_control_node.cpp.s
 
+src/rob_stride_motor.o: src/rob_stride_motor.cpp.o
+.PHONY : src/rob_stride_motor.o
+
+# target to build an object file
+src/rob_stride_motor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rob_stride_motor.dir/build.make CMakeFiles/rob_stride_motor.dir/src/rob_stride_motor.cpp.o
+.PHONY : src/rob_stride_motor.cpp.o
+
+src/rob_stride_motor.i: src/rob_stride_motor.cpp.i
+.PHONY : src/rob_stride_motor.i
+
+# target to preprocess a source file
+src/rob_stride_motor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rob_stride_motor.dir/build.make CMakeFiles/rob_stride_motor.dir/src/rob_stride_motor.cpp.i
+.PHONY : src/rob_stride_motor.cpp.i
+
+src/rob_stride_motor.s: src/rob_stride_motor.cpp.s
+.PHONY : src/rob_stride_motor.s
+
+# target to generate assembly for a file
+src/rob_stride_motor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rob_stride_motor.dir/build.make CMakeFiles/rob_stride_motor.dir/src/rob_stride_motor.cpp.s
+.PHONY : src/rob_stride_motor.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -271,15 +817,72 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... ament_cmake_python_build_rs_control_egg"
+	@echo "... ament_cmake_python_copy_rs_control"
+	@echo "... rs_control"
+	@echo "... rs_control__cpp"
+	@echo "... rs_control__py"
 	@echo "... rs_control_uninstall"
 	@echo "... uninstall"
+	@echo "... dual_controller_node"
 	@echo "... main_control_node"
+	@echo "... rob_stride_motor"
+	@echo "... rs_control__rosidl_generator_c"
+	@echo "... rs_control__rosidl_generator_py"
+	@echo "... rs_control__rosidl_typesupport_c"
+	@echo "... rs_control__rosidl_typesupport_c__pyext"
+	@echo "... rs_control__rosidl_typesupport_cpp"
+	@echo "... rs_control__rosidl_typesupport_fastrtps_c"
+	@echo "... rs_control__rosidl_typesupport_fastrtps_c__pyext"
+	@echo "... rs_control__rosidl_typesupport_fastrtps_cpp"
+	@echo "... rs_control__rosidl_typesupport_introspection_c"
+	@echo "... rs_control__rosidl_typesupport_introspection_c__pyext"
+	@echo "... rs_control__rosidl_typesupport_introspection_cpp"
+	@echo "... rosidl_generator_c/rs_control/msg/detail/sine_wave_parameters__functions.o"
+	@echo "... rosidl_generator_c/rs_control/msg/detail/sine_wave_parameters__functions.i"
+	@echo "... rosidl_generator_c/rs_control/msg/detail/sine_wave_parameters__functions.s"
+	@echo "... rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_c.o"
+	@echo "... rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_c.i"
+	@echo "... rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_c.s"
+	@echo "... rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.o"
+	@echo "... rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.i"
+	@echo "... rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_fastrtps_c.s"
+	@echo "... rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.o"
+	@echo "... rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.i"
+	@echo "... rosidl_generator_py/rs_control/_rs_control_s.ep.rosidl_typesupport_introspection_c.s"
+	@echo "... rosidl_generator_py/rs_control/msg/_sine_wave_parameters_s.o"
+	@echo "... rosidl_generator_py/rs_control/msg/_sine_wave_parameters_s.i"
+	@echo "... rosidl_generator_py/rs_control/msg/_sine_wave_parameters_s.s"
+	@echo "... rosidl_typesupport_c/rs_control/msg/sine_wave_parameters__type_support.o"
+	@echo "... rosidl_typesupport_c/rs_control/msg/sine_wave_parameters__type_support.i"
+	@echo "... rosidl_typesupport_c/rs_control/msg/sine_wave_parameters__type_support.s"
+	@echo "... rosidl_typesupport_cpp/rs_control/msg/sine_wave_parameters__type_support.o"
+	@echo "... rosidl_typesupport_cpp/rs_control/msg/sine_wave_parameters__type_support.i"
+	@echo "... rosidl_typesupport_cpp/rs_control/msg/sine_wave_parameters__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_c/rs_control/msg/detail/sine_wave_parameters__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/rs_control/msg/detail/sine_wave_parameters__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/rs_control/msg/detail/sine_wave_parameters__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/rs_control/msg/detail/dds_fastrtps/sine_wave_parameters__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/rs_control/msg/detail/dds_fastrtps/sine_wave_parameters__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/rs_control/msg/detail/dds_fastrtps/sine_wave_parameters__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/rs_control/msg/detail/sine_wave_parameters__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/rs_control/msg/detail/sine_wave_parameters__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/rs_control/msg/detail/sine_wave_parameters__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/rs_control/msg/detail/sine_wave_parameters__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/rs_control/msg/detail/sine_wave_parameters__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/rs_control/msg/detail/sine_wave_parameters__type_support.s"
 	@echo "... src/can_interface.o"
 	@echo "... src/can_interface.i"
 	@echo "... src/can_interface.s"
+	@echo "... src/dual_controller_node.o"
+	@echo "... src/dual_controller_node.i"
+	@echo "... src/dual_controller_node.s"
 	@echo "... src/main_control_node.o"
 	@echo "... src/main_control_node.i"
 	@echo "... src/main_control_node.s"
+	@echo "... src/rob_stride_motor.o"
+	@echo "... src/rob_stride_motor.i"
+	@echo "... src/rob_stride_motor.s"
 .PHONY : help
 
 
