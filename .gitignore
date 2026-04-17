@@ -1,3 +1,10 @@
-.build
-.install
-.log
+# Build artifacts
+build/
+install/
+log/
+
+.env
+.env.*
+
+.vscode/
+.idea/
