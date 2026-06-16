@@ -24,12 +24,13 @@ include_directories(include ${CMAKE_BINARY_DIR}/rosidl_generator_cpp)
 add_library(rob_stride_motor src/rob_stride_motor.cpp)
 ament_target_dependencies(rob_stride_motor rclcpp)
 
-add_executable(main_control_node src/main_control_node.cpp src/can_interface.cpp)
-ament_target_dependencies(main_control_node rclcpp std_msgs sensor_msgs)
-
 add_executable(dual_controller_node src/dual_controller_node.cpp)
 ament_target_dependencies(dual_controller_node rclcpp std_msgs sensor_msgs rosidl_default_runtime)
 target_link_libraries(dual_controller_node rob_stride_motor rs_control__rosidl_typesupport_cpp)
+
+add_executable(full_mit_controller_node src/full_mit_controller_node.cpp)
+ament_target_dependencies(full_mit_controller_node rclcpp std_msgs sensor_msgs rosidl_default_runtime)
+target_link_libraries(full_mit_controller_node rob_stride_motor rs_control__rosidl_typesupport_cpp)
 
 install(TARGETS rob_stride_motor
   LIBRARY DESTINATION lib
@@ -37,7 +38,11 @@ install(TARGETS rob_stride_motor
   RUNTIME DESTINATION bin
 )
 
-install(TARGETS main_control_node dual_controller_node
+install(TARGETS dual_controller_node
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(TARGETS full_mit_controller_node
   DESTINATION lib/${PROJECT_NAME}
 )
 

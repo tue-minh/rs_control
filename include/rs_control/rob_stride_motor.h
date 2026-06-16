@@ -127,6 +127,18 @@ public:
     bool write_mit_frame(double position, double kp, double kd, double torque = 0.0);
 
     /**
+     * @brief Send MIT mode control frame with velocity control
+     * @param position Target position (radians)
+     * @param velocity Target velocity (rad/s)
+     * @param kp Position stiffness (0-5000 Nm/rad)
+     * @param kd Damping (0-100 Nm/rad/s)
+     * @param torque Feed-forward torque (optional, default: 0)
+     *
+     * Full MIT mode control - use this for impedance control with velocity damping
+     */
+    bool write_mit_frame(double position, double velocity, double kp, double kd, double torque = 0.0);
+
+    /**
      * @brief Read and process available status frames
      * @param timeout_ms Read timeout in milliseconds
      * @return number of frames processed
@@ -150,6 +162,8 @@ public:
 
     // --- Static utility functions ---
     static double clamp_position(double pos);
+    static double clamp_velocity(double vel);
+    static double clamp_torque(double torque);
     static double clamp_kp(double kp);
     static double clamp_kd(double kd);
 

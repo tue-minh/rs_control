@@ -239,24 +239,50 @@ bool RobStrideMotor::set_limits(double velocity_limit, double torque_limit) {
 }
 
 bool RobStrideMotor::write_mit_frame(double position, double kp, double kd, double torque) {
+    // Delegate to full version with zero velocity target
+    return write_mit_frame(position, 0.0, kp, kd, torque);
+}
+
+bool RobStrideMotor::write_mit_frame(double position, double velocity, double kp, double kd, double torque) {
     // Clamp values to valid ranges
     position = clamp_position(position);
     kp = clamp_kp(kp);
     kd = clamp_kd(kd);
 
-    // Convert to protocol units (big-endian)
+    // Clamp velocity to valid range
+    velocity = std::max(-VELOCITY_SCALE, std::min(VELOCITY_SCALE, velocity));
+    // Clamp torque to valid range
+    torque = std::max(-TORQUE_SCALE, std::min(TORQUE_SCALE, torque));
+
+    // Convert to protocol units (big-endian, matching reference implementation)
+    // Position: -4π to +4π maps to 0x0000 to 0xFFFF (0x7FFF = 0 rad)
     uint16_t pos_u16 = static_cast<uint16_t>(((position / POSITION_SCALE) + 1.0) * 0x7FFF);
-    uint16_t vel_u16 = 0x7FFF;  // Zero velocity
+    // Velocity: -50 to +50 rad/s maps to 0x0000 to 0xFFFF (0x7FFF = 0 rad/s)
+    uint16_t vel_u16 = static_cast<uint16_t>(((velocity / VELOCITY_SCALE) + 1.0) * 0x7FFF);
+    // Kp: 0-5000 maps to 0x0000 to 0xFFFF
     uint16_t kp_u16 = static_cast<uint16_t>((kp / KP_SCALE) * 0xFFFF);
+    // Kd: 0-100 maps to 0x0000 to 0xFFFF
     uint16_t kd_u16 = static_cast<uint16_t>((kd / KD_SCALE) * 0xFFFF);
+    // Torque feedforward: -60 to +60 Nm maps to 0x0000 to 0xFFFF
     uint16_t torque_u16 = static_cast<uint16_t>(((torque / TORQUE_SCALE) + 1.0) * 0x7FFF);
 
+    // Pack data bytes in big-endian format (matching lib_references/robstride.cpp)
+    // Data[0-1]: Position (MSB first)
+    // Data[2-3]: Velocity (MSB first)
+    // Data[4-5]: Kp (MSB first)
+    // Data[6-7]: Kd (MSB first)
     uint8_t data[8];
-    pack_u16_be(&data[0], pos_u16);
-    pack_u16_be(&data[2], vel_u16);
-    pack_u16_be(&data[4], kp_u16);
-    pack_u16_be(&data[6], kd_u16);
+    data[0] = static_cast<uint8_t>(pos_u16 >> 8);
+    data[1] = static_cast<uint8_t>(pos_u16 & 0xFF);
+    data[2] = static_cast<uint8_t>(vel_u16 >> 8);
+    data[3] = static_cast<uint8_t>(vel_u16 & 0xFF);
+    data[4] = static_cast<uint8_t>(kp_u16 >> 8);
+    data[5] = static_cast<uint8_t>(kp_u16 & 0xFF);
+    data[6] = static_cast<uint8_t>(kd_u16 >> 8);
+    data[7] = static_cast<uint8_t>(kd_u16 & 0xFF);
 
+    // Extended ID format: [CommType (8 bits)] [Torque (8 bits)] [Reserved] [Motor ID]
+    // Matches: cansendata.id = Communication_Type_MotionControl<<24|torque_u16<<8|CAN_ID
     uint32_t ext_id = (CommType::OPERATION_CONTROL << 24) | (torque_u16 << 8) | motor_id_;
     return send_frame(ext_id, data, 8);
 }
@@ -366,6 +392,14 @@ uint32_t RobStrideMotor::build_ext_id(uint32_t comm_type, uint16_t) {
 
 double RobStrideMotor::clamp_position(double pos) {
     return std::max(-POSITION_SCALE, std::min(POSITION_SCALE, pos));
+}
+
+double RobStrideMotor::clamp_velocity(double vel) {
+    return std::max(-VELOCITY_SCALE, std::min(VELOCITY_SCALE, vel));
+}
+
+double RobStrideMotor::clamp_torque(double torque) {
+    return std::max(-TORQUE_SCALE, std::min(TORQUE_SCALE, torque));
 }
 
 double RobStrideMotor::clamp_kp(double kp) {
