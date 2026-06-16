@@ -97,6 +97,7 @@ public:
             [this]() { this->control_loop(); });
 
         RCLCPP_INFO(this->get_logger(), "Full MIT Controller Node started");
+
     }
 
     ~FullMITControllerNode()
@@ -147,6 +148,7 @@ private:
         msg1.name = {"motor1"};
         msg1.position = {motor1_->get_state().position.load()};
         msg1.velocity = {motor1_->get_state().velocity.load()};
+        msg1.effort   = {motor1_->get_state().torque.load()};
         state_pub1_->publish(msg1);
 
         auto msg2 = sensor_msgs::msg::JointState();
@@ -154,6 +156,7 @@ private:
         msg2.name = {"motor2"};
         msg2.position = {motor2_->get_state().position.load()};
         msg2.velocity = {motor2_->get_state().velocity.load()};
+        msg2.effort   = {motor2_->get_state().torque.load()};
         state_pub2_->publish(msg2);
     }
 
