@@ -6,7 +6,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/float64.hpp"
 #include "std_msgs/msg/int8.hpp"
-#include "sensor_msgs/msg/joint_state.hpp"
+#include "rs_control/msg/motor_state.hpp"
 
 #include <memory>
 #include <string>
@@ -28,8 +28,8 @@ public:
       running_(true)
     {
         // Publishers
-        state_pub1_ = this->create_publisher<sensor_msgs::msg::JointState>("motor1/state", 10);
-        state_pub2_ = this->create_publisher<sensor_msgs::msg::JointState>("motor2/state", 10);
+        state_pub1_ = this->create_publisher<rs_control::msg::MotorState>("motor1/state", 10);
+        state_pub2_ = this->create_publisher<rs_control::msg::MotorState>("motor2/state", 10);
 
         // Subscribers for Motor 1
         sub_pos1_ = this->create_subscription<std_msgs::msg::Float64>(
@@ -234,18 +234,20 @@ private:
 
     void publish_states()
     {
-        auto msg1 = sensor_msgs::msg::JointState();
+        auto msg1 = rs_control::msg::MotorState();
         msg1.header.stamp = this->now();
         msg1.name = {"motor1"};
         msg1.position = {motor1_->get_state().position.load()};
         msg1.velocity = {motor1_->get_state().velocity.load()};
+        msg1.torque = {motor1_->get_state().torque.load()};
         state_pub1_->publish(msg1);
 
-        auto msg2 = sensor_msgs::msg::JointState();
+        auto msg2 = rs_control::msg::MotorState();
         msg2.header.stamp = this->now();
         msg2.name = {"motor2"};
         msg2.position = {motor2_->get_state().position.load()};
         msg2.velocity = {motor2_->get_state().velocity.load()};
+        msg2.torque = {motor2_->get_state().torque.load()};
         state_pub2_->publish(msg2);
     }
 
@@ -267,8 +269,8 @@ private:
 
     // ROS
     rclcpp::TimerBase::SharedPtr timer_;
-    rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr state_pub1_;
-    rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr state_pub2_;
+    rclcpp::Publisher<rs_control::msg::MotorState>::SharedPtr state_pub1_;
+    rclcpp::Publisher<rs_control::msg::MotorState>::SharedPtr state_pub2_;
 
     rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_pos1_;
     rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_kp1_;

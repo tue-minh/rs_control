@@ -17,6 +17,8 @@ find_package(rosidl_default_generators REQUIRED)
 # Generate messages
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/SineWaveParameters.msg"
+  "msg/MotorState.msg"
+  DEPENDENCIES std_msgs
 )
 
 include_directories(include ${CMAKE_BINARY_DIR}/rosidl_generator_cpp)
@@ -29,7 +31,7 @@ ament_target_dependencies(dual_controller_node rclcpp std_msgs sensor_msgs rosid
 target_link_libraries(dual_controller_node rob_stride_motor rs_control__rosidl_typesupport_cpp)
 
 add_executable(full_mit_controller_node src/full_mit_controller_node.cpp)
-ament_target_dependencies(full_mit_controller_node rclcpp std_msgs sensor_msgs rosidl_default_runtime)
+ament_target_dependencies(full_mit_controller_node rclcpp std_msgs rosidl_default_runtime)
 target_link_libraries(full_mit_controller_node rob_stride_motor rs_control__rosidl_typesupport_cpp)
 
 install(TARGETS rob_stride_motor
