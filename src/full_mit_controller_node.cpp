@@ -6,6 +6,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/float64.hpp"
 #include "std_msgs/msg/int8.hpp"
+#include "std_msgs/msg/float64_multi_array.hpp"
 #include "rs_control/msg/motor_state.hpp"
 
 #include <memory>
@@ -83,6 +84,27 @@ public:
                     motor2_->set_mode(mode2_);
                     RCLCPP_INFO(this->get_logger(), "Motor2 mode changed to %d", mode2_);
                 }
+            });
+        // Matrix configuration subscription for both motors
+        sub_cfg_matrix_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
+            "motors/config_matrix", 10,
+            [this](const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
+                if (msg->data.size() < 10) {
+                    RCLCPP_WARN(this->get_logger(), "Config matrix message too short, expected 10 values");
+                    return;
+                }
+                // Motor 1
+                pos1_ = msg->data[0];
+                vel1_ = msg->data[1];
+                kp1_ = msg->data[2];
+                kd1_ = msg->data[3];
+                torque1_ = msg->data[4];
+                // Motor 2
+                pos2_ = msg->data[5];
+                vel2_ = msg->data[6];
+                kp2_ = msg->data[7];
+                kd2_ = msg->data[8];
+                torque2_ = msg->data[9];
             });
 
         // Initialize motors
@@ -189,6 +211,7 @@ private:
     rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_torque2_;
     rclcpp::Subscription<std_msgs::msg::Int8>::SharedPtr sub_mode1_;
     rclcpp::Subscription<std_msgs::msg::Int8>::SharedPtr sub_mode2_;
+    rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr sub_cfg_matrix_;
 
     std::atomic<bool> running_;
 };
