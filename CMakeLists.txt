@@ -34,6 +34,10 @@ add_executable(full_mit_controller_node src/full_mit_controller_node.cpp)
 ament_target_dependencies(full_mit_controller_node rclcpp std_msgs rosidl_default_runtime)
 target_link_libraries(full_mit_controller_node rob_stride_motor rs_control__rosidl_typesupport_cpp)
 
+add_executable(haptic_control_node src/haptic_control_node.cpp)
+ament_target_dependencies(haptic_control_node rclcpp std_msgs rosidl_default_runtime)
+target_link_libraries(haptic_control_node rob_stride_motor rs_control__rosidl_typesupport_cpp)
+
 install(TARGETS rob_stride_motor
   LIBRARY DESTINATION lib
   ARCHIVE DESTINATION lib
@@ -45,6 +49,10 @@ install(TARGETS dual_controller_node
 )
 
 install(TARGETS full_mit_controller_node
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(TARGETS haptic_control_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
