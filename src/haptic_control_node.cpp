@@ -81,7 +81,8 @@ public:
 
         // Control loop at 100Hz
         timer_ = this->create_wall_timer(
-            std::chrono::milliseconds(10),
+            // std::chrono::milliseconds(10),
+            std::chrono::milliseconds(5), //200hz
             [this]() { this->control_loop(); });
 
         RCLCPP_INFO(this->get_logger(), "Haptic Control Node started (Master=127, Slave=1)");
@@ -144,7 +145,8 @@ private:
 
         // 4. Force feedback: apply slave torque to master (negative = resistance)
         double feedback_torque = -slave_torque + master_torque_ff_.load();
-        master_->write_mit_frame(master_pos, 0.0, master_kp_, master_kd_, feedback_torque);
+        // master_->write_mit_frame(master_pos, 0.0, master_kp_, master_kd_, feedback_torque);
+        master_->write_mit_frame(master_pos, 0.0, 0, master_kd_, feedback_torque);
 
         // 5. Publish states
         publish_states(master_pos, master_vel, master_torque, slave_pos, slave_vel, slave_torque);
@@ -191,9 +193,9 @@ private:
 
     // Tunable gains (updated via config_matrix)
     double master_kp_{0.0};
-    double master_kd_{0};
-    double slave_kp_{0};
-    double slave_kd_{0};
+    double master_kd_{0.02};
+    double slave_kp_{3};
+    double slave_kd_{0.5};
     double slave_torque_{0.0};
 
     // ROS interfaces

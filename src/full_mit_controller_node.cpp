@@ -32,40 +32,6 @@ public:
         state_pub1_ = this->create_publisher<rs_control::msg::MotorState>("motor1/state", 10);
         state_pub2_ = this->create_publisher<rs_control::msg::MotorState>("motor2/state", 10);
 
-        // Subscriptions for Motor 1 parameters
-        sub_pos1_ = this->create_subscription<std_msgs::msg::Float64>(
-            "motor1/position", 10,
-            [this](const std_msgs::msg::Float64::SharedPtr msg) { pos1_ = msg->data; });
-        sub_vel1_ = this->create_subscription<std_msgs::msg::Float64>(
-            "motor1/velocity", 10,
-            [this](const std_msgs::msg::Float64::SharedPtr msg) { vel1_ = msg->data; });
-        sub_kp1_ = this->create_subscription<std_msgs::msg::Float64>(
-            "motor1/kp", 10,
-            [this](const std_msgs::msg::Float64::SharedPtr msg) { kp1_ = msg->data; });
-        sub_kd1_ = this->create_subscription<std_msgs::msg::Float64>(
-            "motor1/kd", 10,
-            [this](const std_msgs::msg::Float64::SharedPtr msg) { kd1_ = msg->data; });
-        sub_torque1_ = this->create_subscription<std_msgs::msg::Float64>(
-            "motor1/torque", 10,
-            [this](const std_msgs::msg::Float64::SharedPtr msg) { torque1_ = msg->data; });
-
-        // Subscriptions for Motor 2 parameters
-        sub_pos2_ = this->create_subscription<std_msgs::msg::Float64>(
-            "motor2/position", 10,
-            [this](const std_msgs::msg::Float64::SharedPtr msg) { pos2_ = msg->data; });
-        sub_vel2_ = this->create_subscription<std_msgs::msg::Float64>(
-            "motor2/velocity", 10,
-            [this](const std_msgs::msg::Float64::SharedPtr msg) { vel2_ = msg->data; });
-        sub_kp2_ = this->create_subscription<std_msgs::msg::Float64>(
-            "motor2/kp", 10,
-            [this](const std_msgs::msg::Float64::SharedPtr msg) { kp2_ = msg->data; });
-        sub_kd2_ = this->create_subscription<std_msgs::msg::Float64>(
-            "motor2/kd", 10,
-            [this](const std_msgs::msg::Float64::SharedPtr msg) { kd2_ = msg->data; });
-        sub_torque2_ = this->create_subscription<std_msgs::msg::Float64>(
-            "motor2/torque", 10,
-            [this](const std_msgs::msg::Float64::SharedPtr msg) { torque2_ = msg->data; });
-
         // Mode subscriptions (retain MIT mode handling)
         sub_mode1_ = this->create_subscription<std_msgs::msg::Int8>(
             "motor1/mode", 10,
