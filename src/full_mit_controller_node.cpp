@@ -82,54 +82,46 @@ public:
             return;
         }
 
-        // LPF parameter subscriptions
-        sub_lpf_pos1_cutoff_ = this->create_subscription<std_msgs::msg::Float64>(
-            "motor1/lpf_pos/cutoff_freq", 10,
-            [this](const std_msgs::msg::Float64::SharedPtr msg) {
-                lpf_pos1_.setCutoffFrequency(msg->data);
-                RCLCPP_DEBUG(this->get_logger(), "Motor1 position LPF cutoff updated to %f", msg->data);
+        // LPF parameter subscriptions (multi-array: [cutoff_freq, sample_time])
+        sub_lpf_pos1_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
+            "motor1/lpf_pos/params", 10,
+            [this](const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
+                if (msg->data.size() < 2) {
+                    RCLCPP_WARN(this->get_logger(), "LPF pos1 params too short");
+                    return;
+                }
+                lpf_pos1_.setCutoffFrequency(msg->data[0]);
+                lpf_pos1_.setSampleTime(msg->data[1]);
             });
-        sub_lpf_pos1_sample_time_ = this->create_subscription<std_msgs::msg::Float64>(
-            "motor1/lpf_pos/sample_time", 10,
-            [this](const std_msgs::msg::Float64::SharedPtr msg) {
-                lpf_pos1_.setSampleTime(msg->data);
-                RCLCPP_DEBUG(this->get_logger(), "Motor1 position LPF sample time updated to %f", msg->data);
+        sub_lpf_vel1_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
+            "motor1/lpf_vel/params", 10,
+            [this](const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
+                if (msg->data.size() < 2) {
+                    RCLCPP_WARN(this->get_logger(), "LPF vel1 params too short");
+                    return;
+                }
+                lpf_vel1_.setCutoffFrequency(msg->data[0]);
+                lpf_vel1_.setSampleTime(msg->data[1]);
             });
-        sub_lpf_vel1_cutoff_ = this->create_subscription<std_msgs::msg::Float64>(
-            "motor1/lpf_vel/cutoff_freq", 10,
-            [this](const std_msgs::msg::Float64::SharedPtr msg) {
-                lpf_vel1_.setCutoffFrequency(msg->data);
-                RCLCPP_DEBUG(this->get_logger(), "Motor1 velocity LPF cutoff updated to %f", msg->data);
+        sub_lpf_pos2_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
+            "motor2/lpf_pos/params", 10,
+            [this](const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
+                if (msg->data.size() < 2) {
+                    RCLCPP_WARN(this->get_logger(), "LPF pos2 params too short");
+                    return;
+                }
+                lpf_pos2_.setCutoffFrequency(msg->data[0]);
+                lpf_pos2_.setSampleTime(msg->data[1]);
             });
-        sub_lpf_vel1_sample_time_ = this->create_subscription<std_msgs::msg::Float64>(
-            "motor1/lpf_vel/sample_time", 10,
-            [this](const std_msgs::msg::Float64::SharedPtr msg) {
-                lpf_vel1_.setSampleTime(msg->data);
-                RCLCPP_DEBUG(this->get_logger(), "Motor1 velocity LPF sample time updated to %f", msg->data);
-            });
-        sub_lpf_pos2_cutoff_ = this->create_subscription<std_msgs::msg::Float64>(
-            "motor2/lpf_pos/cutoff_freq", 10,
-            [this](const std_msgs::msg::Float64::SharedPtr msg) {
-                lpf_pos2_.setCutoffFrequency(msg->data);
-                RCLCPP_DEBUG(this->get_logger(), "Motor2 position LPF cutoff updated to %f", msg->data);
-            });
-        sub_lpf_pos2_sample_time_ = this->create_subscription<std_msgs::msg::Float64>(
-            "motor2/lpf_pos/sample_time", 10,
-            [this](const std_msgs::msg::Float64::SharedPtr msg) {
-                lpf_pos2_.setSampleTime(msg->data);
-                RCLCPP_DEBUG(this->get_logger(), "Motor2 position LPF sample time updated to %f", msg->data);
-            });
-        sub_lpf_vel2_cutoff_ = this->create_subscription<std_msgs::msg::Float64>(
-            "motor2/lpf_vel/cutoff_freq", 10,
-            [this](const std_msgs::msg::Float64::SharedPtr msg) {
-                lpf_vel2_.setCutoffFrequency(msg->data);
-                RCLCPP_DEBUG(this->get_logger(), "Motor2 velocity LPF cutoff updated to %f", msg->data);
-            });
-        sub_lpf_vel2_sample_time_ = this->create_subscription<std_msgs::msg::Float64>(
-            "motor2/lpf_vel/sample_time", 10,
-            [this](const std_msgs::msg::Float64::SharedPtr msg) {
-                lpf_vel2_.setSampleTime(msg->data);
-                RCLCPP_DEBUG(this->get_logger(), "Motor2 velocity LPF sample time updated to %f", msg->data);
+        sub_lpf_vel2_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
+            "motor2/lpf_vel/params", 10,
+            [this](const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
+                if (msg->data.size() < 2) {
+                    RCLCPP_WARN(this->get_logger(), "LPF vel2 params too short");
+                    return;
+                }
+                lpf_vel2_.setCutoffFrequency(msg->data[0]);
+                lpf_vel2_.setSampleTime(msg->data[1]);
             });
 
         // Control loop at 50Hz
@@ -236,34 +228,29 @@ private:
     int8_t mode1_ = ControlMode::MIT_MODE;
     int8_t mode2_ = ControlMode::MIT_MODE;
 
-    // ROS interfaces
-    rclcpp::TimerBase::SharedPtr timer_;
-    rclcpp::Publisher<rs_control::msg::MotorState>::SharedPtr state_pub1_;
-    rclcpp::Publisher<rs_control::msg::MotorState>::SharedPtr state_pub2_;
-    rclcpp::Publisher<rs_control::msg::MotorState>::SharedPtr state_pub1_filtered_;
-    rclcpp::Publisher<rs_control::msg::MotorState>::SharedPtr state_pub2_filtered_;
-    rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_pos1_;
-    rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_vel1_;
-    rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_kp1_;
-    rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_kd1_;
-    rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_torque1_;
-    rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_pos2_;
-    rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_vel2_;
-    rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_kp2_;
-    rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_kd2_;
-    rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_torque2_;
-    rclcpp::Subscription<std_msgs::msg::Int8>::SharedPtr sub_mode1_;
-    rclcpp::Subscription<std_msgs::msg::Int8>::SharedPtr sub_mode2_;
-    rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr sub_cfg_matrix_;
-    // LPF parameter subscriptions
-    rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_lpf_pos1_cutoff_;
-    rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_lpf_pos1_sample_time_;
-    rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_lpf_vel1_cutoff_;
-    rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_lpf_vel1_sample_time_;
-    rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_lpf_pos2_cutoff_;
-    rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_lpf_pos2_sample_time_;
-    rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_lpf_vel2_cutoff_;
-    rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_lpf_vel2_sample_time_;
+// ROS interfaces
+     rclcpp::TimerBase::SharedPtr timer_;
+     rclcpp::Publisher<rs_control::msg::MotorState>::SharedPtr state_pub1_;
+     rclcpp::Publisher<rs_control::msg::MotorState>::SharedPtr state_pub2_;
+     rclcpp::Publisher<rs_control::msg::MotorState>::SharedPtr state_pub1_filtered_;
+     rclcpp::Publisher<rs_control::msg::MotorState>::SharedPtr state_pub2_filtered_;
+     rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_pos1_;
+     rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_vel1_;
+     rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_kp1_;
+     rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_kd1_;
+     rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_torque1_;
+     rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_pos2_;
+     rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_vel2_;
+     rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_kp2_;
+     rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_kd2_;
+     rclcpp::Subscription<std_msgs::msg::Int8>::SharedPtr sub_mode1_;
+     rclcpp::Subscription<std_msgs::msg::Int8>::SharedPtr sub_mode2_;
+     rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr sub_cfg_matrix_;
+     // LPF parameter parameters (multi-array: [cutoff_freq, sample_time])
+     rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr sub_lpf_pos1_;
+     rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr sub_lpf_vel1_;
+     rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr sub_lpf_pos2_;
+     rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr sub_lpf_vel2_;
 
     std::atomic<bool> running_;
 };
