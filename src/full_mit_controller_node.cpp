@@ -18,6 +18,7 @@
 
 #include "rs_control/rob_stride_motor.h"
 #include "rs_control/protocol.h"
+#include "low_pass_filter.h"
 
 class FullMITControllerNode : public rclcpp::Node
 {
