@@ -123,6 +123,26 @@ public:
                 lpf_vel2_.setCutoffFrequency(msg->data[0]);
                 lpf_vel2_.setSampleTime(msg->data[1]);
             });
+        sub_lpf_torque1_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
+            "motor1/lpf_torque/params", 10,
+            [this](const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
+                if (msg->data.size() < 2) {
+                    RCLCPP_WARN(this->get_logger(), "LPF torque1 params too short");
+                    return;
+                }
+                lpf_torque1_.setCutoffFrequency(msg->data[0]);
+                lpf_torque1_.setSampleTime(msg->data[1]);
+            });
+        sub_lpf_torque2_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
+            "motor2/lpf_torque/params", 10,
+            [this](const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
+                if (msg->data.size() < 2) {
+                    RCLCPP_WARN(this->get_logger(), "LPF torque2 params too short");
+                    return;
+                }
+                lpf_torque2_.setCutoffFrequency(msg->data[0]);
+                lpf_torque2_.setSampleTime(msg->data[1]);
+            });
 
         // Control loop at 50Hz
         timer_ = this->create_wall_timer(
@@ -189,7 +209,7 @@ private:
         msg1_f.name = {"motor1"};
         msg1_f.position = {lpf_pos1_.filter(msg1.position[0])};
         msg1_f.velocity = {lpf_vel1_.filter(msg1.velocity[0])};
-        msg1_f.torque   = msg1.torque;
+        msg1_f.torque   = {lpf_torque1_.filter(msg1.torque[0])};
         state_pub1_filtered_->publish(msg1_f);
 
         auto msg2 = rs_control::msg::MotorState();
@@ -205,7 +225,7 @@ private:
         msg2_f.name = {"motor2"};
         msg2_f.position = {lpf_pos2_.filter(msg2.position[0])};
         msg2_f.velocity = {lpf_vel2_.filter(msg2.velocity[0])};
-        msg2_f.torque   = msg2.torque;
+        msg2_f.torque   = {lpf_torque2_.filter(msg2.torque[0])};
         state_pub2_filtered_->publish(msg2_f);
     }
 
@@ -214,10 +234,13 @@ private:
     std::unique_ptr<rs_control::RobStrideMotor> motor2_;
 
     // Low-pass filters for position and velocity
-    rs_control::LowPassFilter lpf_pos1_{10.0, 0.02};
-    rs_control::LowPassFilter lpf_vel1_{10.0, 0.02};
-    rs_control::LowPassFilter lpf_pos2_{10.0, 0.02};
-    rs_control::LowPassFilter lpf_vel2_{10.0, 0.02};
+    rs_control::LowPassFilter lpf_pos1_{0.2, 0.07};
+    rs_control::LowPassFilter lpf_vel1_{0.2, 0.07};
+    rs_control::LowPassFilter lpf_pos2_{0.2, 0.07};
+    rs_control::LowPassFilter lpf_vel2_{0.2, 0.07};
+    // Low-pass filter for torque
+    rs_control::LowPassFilter lpf_torque1_{0.2, 0.07};
+    rs_control::LowPassFilter lpf_torque2_{0.2, 0.07};
 
     // Current control values for motor 1
     double pos1_ = 0.0, vel1_ = 0.0, kp1_ = 2.0, kd1_ = 0.5, torque1_ = 0.0;
@@ -251,6 +274,8 @@ private:
      rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr sub_lpf_vel1_;
      rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr sub_lpf_pos2_;
      rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr sub_lpf_vel2_;
+     rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr sub_lpf_torque1_;
+     rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr sub_lpf_torque2_;
 
     std::atomic<bool> running_;
 };
