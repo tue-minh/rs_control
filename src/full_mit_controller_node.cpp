@@ -4,6 +4,7 @@
  */
 
 #include "rclcpp/rclcpp.hpp"
+#include "std_msgs/msg/empty.hpp"
 #include "std_msgs/msg/float64.hpp"
 #include "std_msgs/msg/int8.hpp"
 #include "std_msgs/msg/float64_multi_array.hpp"
@@ -144,6 +145,26 @@ public:
                 lpf_torque2_.setSampleTime(msg->data[1]);
             });
 
+        // Zero-position subscriptions
+        sub_zero1_ = this->create_subscription<std_msgs::msg::Empty>(
+            "motor1/set_zero_position", 10,
+            [this](const std_msgs::msg::Empty::SharedPtr) {
+                if (motor1_->set_zero_position()) {
+                    RCLCPP_INFO(this->get_logger(), "Motor1 zero position set");
+                } else {
+                    RCLCPP_ERROR(this->get_logger(), "Failed to set Motor1 zero position");
+                }
+            });
+        sub_zero2_ = this->create_subscription<std_msgs::msg::Empty>(
+            "motor2/set_zero_position", 10,
+            [this](const std_msgs::msg::Empty::SharedPtr) {
+                if (motor2_->set_zero_position()) {
+                    RCLCPP_INFO(this->get_logger(), "Motor2 zero position set");
+                } else {
+                    RCLCPP_ERROR(this->get_logger(), "Failed to set Motor2 zero position");
+                }
+            });
+
         // Control loop at 50Hz
         timer_ = this->create_wall_timer(
             std::chrono::milliseconds(20),
@@ -276,6 +297,9 @@ private:
      rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr sub_lpf_vel2_;
      rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr sub_lpf_torque1_;
      rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr sub_lpf_torque2_;
+     // Zero position command subscriptions
+     rclcpp::Subscription<std_msgs::msg::Empty>::SharedPtr sub_zero1_;
+     rclcpp::Subscription<std_msgs::msg::Empty>::SharedPtr sub_zero2_;
 
     std::atomic<bool> running_;
 };

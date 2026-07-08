@@ -146,6 +146,14 @@ public:
     int read_status_frames(int timeout_ms = 1);
 
     /**
+     * @brief Set the current motor position as mechanical zero
+     * @return true if successful, false otherwise
+     * 
+     * Disables motor, sends SET_ZERO_POSITION command (0x06), then re-enables.
+     */
+    bool set_zero_position();
+
+    /**
      * @brief Process a single status frame
      */
     void process_status_frame(const struct can_frame& frame);

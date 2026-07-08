@@ -114,6 +114,25 @@ bool RobStrideMotor::disable() {
     return ret;
 }
 
+bool RobStrideMotor::set_zero_position() {
+    // Reference: lib_references/robstride.cpp::Set_ZeroPos()
+    // Must disable motor first, then send SET_ZERO_POSITION command (0x06),
+    // and re-enable afterwards.
+    disable();
+
+    uint32_t ext_id = build_ext_id(CommType::SET_ZERO_POSITION);
+    uint8_t data[8] = {0};
+    data[0] = 1;  // Command: set current position as mechanical zero
+
+    bool ret = send_frame(ext_id, data, 8);
+
+    std::this_thread::sleep_for(std::chrono::milliseconds(10));
+
+    enable();
+
+    return ret;
+}
+
 bool RobStrideMotor::set_mode(int8_t mode) {
     uint32_t ext_id = build_ext_id(CommType::WRITE_PARAMETER);
     uint8_t data[8] = {0};
